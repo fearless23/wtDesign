@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>Week Tweak Styling</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    <link rel="stylesheet" type="text/css" href="login-v2.css">
+  </head>
+  <body>
+
+    <div class="login-wrapper">
+      <div class="login-container">
+
+        <h1 class="wt-title">Week Tweak</h1>
+
+        <div class="welcome-msg">
+          <h2>Welcome back!</h2>
+          <h3>Sign in to continue to Week Tweak.</h3>
+        </div>
+        
+        <button (click)="loginGoogle()" class="btn fbox-sa red btn-md btn-block m-y-md" id="google">
+          <span class="icon-container icon-container-sm"><svg class="icon"><use xlink:href="../icons.svg#icon-menu"></use></svg></span>
+          Login With Google</button>
+        <div style="text-align:center;" class="title m-y"> Or </div>
+        <form class="login-form m-y">
+
+          <div class="form-group">
+            <input type="username"  placeholder="Username" class="form-control input-lg input-block" active>
+          </div>
+
+          <div class="form-group">
+            <input type="password"  placeholder="Password" class="form-control input-lg input-block">
+          </div>
+
+          <button type="button" class="btn btn-blue btn-lg btn-block m-y">Login</button>
+
+        </form>
+
+        <span class="error hidden" *ngIf="error">{{ error }}</span>
+        
+
+        <div style="text-align: center;" routerLink="/signup" routerLinkActive="active" class="title text-blue m-y-md"><a>Don`t have an account? SignUp</a></div>
+
+      </div>
+    </div>
+
+
+  </body>
+</html>

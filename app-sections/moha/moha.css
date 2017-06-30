@@ -1,0 +1,99 @@
+.moha-wrapper {
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/back.jpg);
+	background-size: cover;
+	background-origin: 0px;
+	background-repeat: no-repeat;
+	background-color: hsla(207,6%,32%,0.1);
+}
+
+.moha-container {
+	width: 100%;
+	margin: 0;
+	height: 100vh;
+	background-color: hsla(207,6%,32%,0.1);
+	padding: 4em 4em 14em 4em;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+}
+
+.moha-date {
+	padding: 1em;
+	background-color: hsla(207,6%,32%,0.5);
+}
+
+.moha-logo {
+
+}
+
+.moha-menu-container {
+	position: absolute;
+	left: 0;
+	bottom: 10em;
+	width: 100%;
+	height: 2em;
+	background-color: hsl(207,6%,32%);
+	z-index: 10;
+
+	color: #fff;
+}
+
+.moha-menu {
+	width: 100%;
+	color: #ababab;
+	display: flex;
+}
+
+.moha-menu-link {
+	width: 20%;
+	text-align: center;
+	line-height: 2em;
+	border-right: 1px solid hsl(207,6%,25%);
+	cursor: pointer;
+	position: relative;
+}
+
+.moha-menu-link:hover {
+	color: #fff;
+}
+
+.moha-menu-link:last-child {
+	border-right: none;
+}
+
+
+.moha-menu-link-title {
+	display: block;
+	width: 100%;
+	height: 2em;
+}
+
+.moha-menu-link-title:hover + .moha-menu-level2 {
+	display: block;
+}
+
+.moha-menu-level2 {
+	position: absolute;
+	background-color: hsl(207,6%,25%);
+	width: 80%;
+	margin-left: 10%;
+	bottom: 2em;
+	color: #ababab;
+	display: none;
+	z-index: 100;
+}
+
+.moha-menu-level2:hover {
+	display: block; /* very cool trick */
+}
+
+.moha-menu-level2-link {
+	height: 2em;
+	text-align: center;
+}
+
+.moha-menu-level2-link:hover {
+	color: #fff;
+}

@@ -1,0 +1,49 @@
+.login-wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #4c4646;
+}
+
+.login-container {
+  min-width: 22.5em;
+  width: 27em;
+  background: whitesmoke;
+  padding: 3em;
+}
+
+.wt-title {
+	font-size: 1.7em;
+	font-weight: bold;
+	text-transform: inherit;
+	letter-spacing: 0.1em;
+}
+
+.welcome-msg {
+	margin-top: 3em;
+}
+
+.welcome-msg h2 {
+	font-size: 1.6em;
+	color: #0f0f0f;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+}
+
+.welcome-msg h3 {
+	font-size: 1.6em;
+	color: darkgrey;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+}
+
+.login-form {
+  margin: 1.59em 0;
+}
+
+.login-form .form-group {
+  margin: 1.26em 0;
+}

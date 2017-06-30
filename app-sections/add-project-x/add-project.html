@@ -1,0 +1,84 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>Week Tweak Styling</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/add-project.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/wt-modal.css">
+        
+    </head>
+    <body>
+      <input type="checkbox" name="wt-modal" id="wt-toggle">
+      <div class="wt-modal">
+        <div class="wt-modal-container">
+          <div class="add-project-container">
+                <div class="add-project-topbar">
+                  <div class="title">Create New Project</div>
+                  <label for="wt-toggle" class="wt-toggle" title="Close">
+                    <svg class="icon" style="fill: #ef233c;">
+                            <use xlink:href="../assets/svg/symbol-defs.svg#icon-cross"></use>
+                        </svg>
+                  </label>
+                </div>
+                <div class="add-project-middle">
+                  <div class="add-project-content">
+                    <div class="add-project-content-title">Category</div>
+                    <div class="add-project-content-selector">
+                      <div class="project-nature-toggle">
+                        <input id="base" type="radio" name="project-category">
+                        <label for="base" >Base</label>
+                        <input id="personal" type="radio" name="project-category" checked>
+                        <label for="personal">Personal</label>
+                        <input id="pro" type="radio" name="project-category">
+                        <label for="pro" >Pro</label>
+                        <input id="social" type="radio" name="project-category">
+                        <label for="social" style="margin-right: 0;">Social</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="add-project-content">
+                    <div class="add-project-content-title">
+                    <label for="project-name">Project Title</label>
+                    </div>
+                    <div class="add-project-content-selector">
+                      <input type="text" id="project-name" placeholder="Learn painting">
+                    </div>
+                  </div>
+                  <div class="add-project-content">
+                    <div class="add-project-content-title">Summary</div>
+                    <div class="add-project-content-selector">
+                      <textarea rows="2" cols="30" placeholder="Learn oil painting this summer"></textarea>
+                    </div>
+                  </div>
+                  <!--<div class="add-project-more_content">More Options</div>
+                  <div class="add-project-content">
+                    <div class="add-project-content-title">Nature</div>
+                    <div class="add-project-content-selector">Base, Personal</div>
+                    <select>
+                      <option>Here is the first option</option>
+                      <option>The second option</option>
+                      <option>The third option</option>
+                    </select>
+                  </div>
+                  <div class="add-project-content">
+                    <div class="add-project-content-title">Role</div>
+                    <div class="add-project-content-selector">Base, Personal</div>
+                  </div>
+                  <div class="add-project-content">
+                    <div class="add-project-content-title">Type</div>
+                    <div class="add-project-content-selector">Base, Personal</div>
+                  </div>-->
+                </div>
+                <div class="add-project-bottom">
+                  <button class="btn btn-red btn-sm">Reset</button>
+                  <button class="btn btn-blue btn-sm">Create Project</button>
+                </div>
+              </div>
+        </div>
+      </div>
+              
+            
+ 
+    </body>
+</html>

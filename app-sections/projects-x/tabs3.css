@@ -1,0 +1,30 @@
+.tabs3-container {
+  display: flex;
+  background-color: #9068BE;
+  color: white;
+  justify-content: center;
+}
+
+.tab3 {
+  width: 12em;
+  text-align: center;
+  padding: 0.5em 0;
+  border-top: 4px solid transparent;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.tab3:hover {
+  opacity: 1;
+  border-top: 4px solid #2ca58D;
+}
+
+.tab3-active {
+  background-color: #f5f5f5;
+  color: #4d5256;
+  opacity: 1;
+  border-top: 4px solid #2ca58D;
+  border-bottom: none;
+  cursor: default;
+}
+

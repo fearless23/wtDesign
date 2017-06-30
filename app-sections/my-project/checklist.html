@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Week Tweak</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    <link rel="stylesheet" type="text/css" href="../main-menu.css">
+    <link rel="stylesheet" type="text/css" href="../top-section.css">
+
+    <!-- PUT YOUR CSS HERE -->
+    <link rel="stylesheet" type="text/css" href="checklist.css">
+
+  </head>
+
+  <body style="height: 100%;">
+
+    <input type="checkbox" id="menu-toggle" name="menu-toggle" class="hidden">
+    <input type="checkbox" id="menu-expander" name="ert" class="hidden">
+    <div class="main-menu-container">
+
+      <div class="user-area">
+
+        <div class="user-img"><img src="../img/diana.jpg"></div>
+
+        <div class="user-account-info">
+          <span>Jaspreet Singh</span>
+          <ul >
+            <li>
+              <svg class="icon"><use xlink:href="../icons.svg#icon-arrow-up"></use></svg>
+            </li>
+            <li>
+              <svg class="icon"><use xlink:href="../icons.svg#icon-cross"></use></svg>
+            </li>
+            <li>
+              <svg class="icon"><use xlink:href="../icons.svg#icon-week"></use></svg>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <ul class="sidebar-icon-list">
+
+        <li class="sidebar-icon">
+          <svg class="icon"><use xlink:href="../icons.svg#icon-home"></use></svg>
+          <span>Week</span>
+        </li>
+        <li class="sidebar-icon">
+          <svg class="icon"><use xlink:href="../icons.svg#icon-project"></use></svg>
+          <span>Projects</span>
+        </li>
+        <li class="sidebar-icon" title="Life">
+          <svg class="icon"><use xlink:href="../icons.svg#icon-plus"></use></svg>
+          <span>Files</span>
+        </li>
+        <li class="sidebar-icon">
+          <svg class="icon"><use xlink:href="../icons.svg#icon-week"></use></svg>
+          <span>Store</span>
+        </li>
+        <li class="sidebar-icon">
+          <svg class="icon"><use xlink:href="../icons.svg#icon-del"></use></svg>
+          <span>Life</span>
+        </li>
+        <li class="sidebar-icon">
+            <svg class="icon"><use xlink:href="../icons.svg#icon-stats"></use></svg>
+          <span>Analysis</span>
+        </li>
+
+      </ul>
+
+      <div class="sidebar-wt">
+        <label for="menu-expander" class="clickable">
+          <svg class="icon icon-right-angle"><use xlink:href="../icons.svg#icon-right-angle"></use></svg>
+        </label>
+      </div>
+
+      <div class="logo">
+        <span>w</span>
+        <span>eek</span>
+        <span>t</span>
+        <span>weak</span>
+      </div>
+
+    </div>
+
+    <div class="content-container">
+
+      <div class="main-topbar">
+        <label for="menu-toggle" class="clickable">
+          <svg class="icon"><use xlink:href="../icons.svg#icon-menu"></use></svg>
+        </label>
+        <div class="page-title">Web Launch</div>
+
+        <div class="icon-group">
+
+          <span class="icon-container" title="Search Projects">
+            <svg class="icon"><use xlink:href="../icons.svg#icon-search"></use></svg>
+          </span>
+          <span class="icon-container" title="Notifications">
+            <svg class="icon"><use xlink:href="../icons.svg#icon-bell"></use></svg>
+            <span class="badge"></span>
+          </span>
+
+          <div class="dropdown-container">
+
+            <span class="clickable icon-container" title="user-account">
+              <svg class="icon"><use xlink:href="../icons.svg#icon-h-dots"></use></svg>
+            </span>
+
+            <div class="dropdown-content dropdown-activex"><!-- edit x to see dropdown effect -->
+
+              <span style="background-color: rgba(181,181,181,0.15); color: #4D5256; height: 2.25em;
+                padding: 0.31em 1em; font-weight: bold;"> Hello Jassi </span>
+
+              <ul class="more-items">
+                <li class="more-item">Profile</li>
+                <li class="more-item">Help</li>
+                <li class="more-item">Focus Mode</li>
+              </ul>
+
+              <hr style=" height: 1px; background: #b5b5b5; opacity: 0.5;">
+
+              <ul class="more-items">
+                <li class="more-item">Settings</li>
+                <li class="more-item">Lock</li>
+                <li class="more-item">Log Out</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="tabs-group">
+        <span class="tab">Overview</span>
+        <span class="tab">Steps</span>
+        <span class="tab tab-active">List</span>
+      </div>
+
+      <div class="">
+
+        
+          <div class="progress">
+            <span class="progress-count">0/X</span>
+            <span class="progress-border"></span>
+            <span class="progress-bar"></span>
+          </div>
+
+       
+
+        <div class="checklist-wrapper">
+
+        <section class="checklist">
+
+          <h2 class="checklist-title">Performance</h2>
+          <span class="checklist-title-border"></span>
+          <span class="checklist-percentage-border"></span>
+
+          <ul class="checklist-container">
+            <li class="checklist-item">
+              
+              <label class="clickable checklist-label">
+                <input type="checkbox" class="hidden" />
+                <span class="checkbox"></span>
+                <span class="checklist-item-title">Images Optimized</span>
+              </label>
+              
+             
+            </li>
+            <li class="checklist-item">
+              
+             <label class="clickable checklist-label">
+                <input type="checkbox" class="hidden" />
+                <span class="checkbox"></span>
+                <span class="checklist-item-title">Reduced Page Weight &amp; Requests</span>
+              </label>
+
+            </li>
+            <li class="checklist-item">
+              <input id="" type="checkbox" />
+              <label for="" class="checkbox"></label>
+              <span class="checklist-item-title">Limited Web Font Usage</span>
+          
+            </li>
+            <li class="checklist-item">
+              <input id="" type="checkbox" />
+              <label for="" class="checkbox"></label>
+              <span class="checklist-item-title">GZIP &amp; JS/CSS Minified</span>
+              
+            </li>
+            <li class="checklist-item">
+              <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item-title">Implemented HTTP/2</span>
+              
+            </li>
+            <li class="checklist-item">
+              <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item-title">Async &amp; Defer Attributes Added</span>
+              
+            </li>
+            <li class="checklist-item">
+              <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item-title">Resource Hinting Added</span>
+              
+            </li>
+            <li class="checklist-item">
+              <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item-title">Cache Headers Set</span>
+              
+            </li>
+            <li class="checklist-item">
+              <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item-title">Consider Service Workers</span>
+              
+            </li>
+            <li class="checklist-item">
+              <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item-title">Run Testing</span>
+              
+            </li>
+          </ul>
+
+        </section>
+        <section class="checklist">
+          <h2 class="checklist-title">SEO</h2>
+          <span class="checklist-title-border"></span>
+          <span class="checklist-percentage-border"></span>
+          <ul class="checklist-container">
+          <li class="checklist-item">
+            <input id="" type="checkbox" />
+            <label for="" class="checkbox"></label>
+            <span class="checklist-item-title">Page-Specific Keywords Set</span>
+            
+          </li>
+          <li class="checklist-item">
+            <input id="" type="checkbox" />
+            <label for="" class="checkbox"></label>
+            <span class="checklist-item-title">Google Analytics &amp; Google Search Console Setup</span>
+            
+          </li>
+          <li class="checklist-item">
+            <input id="" type="checkbox" />
+            <label for="" class="checkbox"></label>
+            <span class="checklist-item-title">XML Sitemap Created &amp; Submitted</span>
+            
+          </li>
+          <li class="checklist-item">
+            <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item-title">Robots.txt Created</span>
+            
+          </li>
+          <li class="checklist-item">
+            <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item-title">Scanned for Broken Links &amp; Crawl Problems</span>
+            
+          </li>
+          <li class="checklist-item">
+            <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item-title">Canonical Links Set</span>
+            
+          </li>
+          <li class="checklist-item">
+            <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item-title">Rich Snippets &amp; Structured Data Added</span>
+            
+          </li>
+          <li class="checklist-item">
+            <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item-title">Facebook &amp; Twitter Cards Created</span>
+            
+          </li>
+          </ul>
+        </section>
+        <section class="checklist">
+          <h2 class="checklist-title">Security</h2>
+          <span class="checklist-title-border"></span>
+          <span class="checklist-percentage-border"></span>
+          <ul class="checklist-container">
+          <li class="checklist-item">
+            <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item-title">HTTPS Set Everywhere</span>
+            
+          </li>
+          <li class="checklist-item">
+            <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item-title">Security Headers Set</span>
+            
+          </li>
+          <li class="checklist-item">
+            <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item-title">Sanitized &amp; Limited User Input/Parameters</span>
+            
+          </li>
+          <li class="checklist-item">
+            <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item-title">Password Hashes Stored in scrypt or bcrypt</span>
+            
+          </li>
+          <li class="checklist-item">
+            <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item-title">Rate Limited Slower API paths</span>
+            
+          </li>
+          </ul>
+        </section>
+        <section class="checklist">
+          <h2 class="checklist-title">Accessibility</h2>
+          <span class="checklist-title-border"></span>
+          <span class="checklist-percentage-border"></span>
+          <ul class="checklist-container">
+          <li class="checklist-item">
+            <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item-title">Contrast Analyzed</span>
+            
+          </li>
+          <li class="checklist-item">
+            <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item-title">Keyboard Navigation Added</span>
+            
+          </li>
+          <li class="checklist-item">
+            <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item-title">Menus Analyzed</span>
+            
+          </li>
+          <li class="checklist-item">
+            <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item-title">Non-Textual Elements Have Alt Tags</span>
+            
+          </li>
+          <li class="checklist-item">
+            <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item-title">Forms Analyzed</span>
+            
+          </li>
+          </ul>
+        </section>
+        <section class="checklist">
+          <h2 class="checklist-title">Content</h2>
+          <span class="checklist-title-border"></span>
+          <span class="checklist-percentage-border"></span>
+          <ul class="checklist-container">
+          <li class="checklist-item">
+            <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item-title">Checked Spelling &amp; Readability </span>
+            
+          </li>
+          <li class="checklist-item">
+            <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item-title">Contact Details &amp; Social Media Reviewed</span>
+            
+          </li>
+          <li class="checklist-item">
+            <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item-title">Links Analyzed</span>
+            
+          </li>
+          <li class="checklist-item">
+            <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item-title">Created Favicon &amp; App Icons </span>
+            
+          </li>
+          <li class="checklist-item">
+            <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item-title">Created Custom 404 &amp; Offline Pages </span>
+            
+          </li>
+          </ul>
+        </section>
+        <!--<section class="checklist">
+          <h2 class="checklist-title">Functionality</h2>
+          <span class="checklist-title-border"></span>
+          <span class="checklist-percentage-border"></span>
+          <ul class="checklist-container">
+          <li class="checklist-item">
+            <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item-title">Made Compatible with Browsers &amp; Platforms</span>
+            
+          </li>
+          <li class="checklist-item">
+            <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item-title">Responsive Analysis Done</span>
+            
+          </li>
+          <li class="checklist-item">
+            <input id="" type="checkbox" /><label for="" class="checkbox"></label><span class="checklist-item-title">Inputs are Mobile Optimized</span>
+           
+          </li>
+          </ul>
+        </section>-->
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>

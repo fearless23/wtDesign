@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Settings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    <link rel="stylesheet" type="text/css" href="../main-menu.css">
+    <link rel="stylesheet" type="text/css" href="../top-section.css">
+
+    <link rel="stylesheet" type="text/css" href="settings.css">
+
+  </head>
+
+  <body style="height: 100%;">
+
+    <input type="checkbox" id="menu-toggle" name="menu-toggle" class="hidden">
+    <input type="checkbox" id="menu-expander" name="ert" class="hidden">
+    <div class="main-menu-container">
+
+      <div class="logo">
+        <span>w</span>
+        <span>eek</span>
+        <span>t</span>
+        <span>weak</span>
+      </div>
+
+      <div class="user-area">
+
+        <div class="user-img"><img src="../img/jassi.jpg"></div>
+
+        <div class="user-account-info">
+          <span>Jaspreet Singh</span>
+          <ul >
+            <li>
+              <svg class="icon"><use xlink:href="../icons.svg#icon-arrow-up"></use></svg>
+            </li>
+            <li>
+              <svg class="icon"><use xlink:href="../icons.svg#icon-cross"></use></svg>
+            </li>
+            <li>
+              <svg class="icon"><use xlink:href="../icons.svg#icon-week"></use></svg>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <ul class="sidebar-icon-list">
+
+        <li class="sidebar-icon">
+          <svg class="icon"><use xlink:href="../icons.svg#icon-home"></use></svg>
+          <span>Week</span>
+        </li>
+        <li class="sidebar-icon menu-active">
+          <svg class="icon"><use xlink:href="../icons.svg#icon-project"></use></svg>
+          <span>Projects</span>
+        </li>
+        <li class="sidebar-icon" title="Life">
+          <svg class="icon"><use xlink:href="../icons.svg#icon-plus"></use></svg>
+          <span>Files</span>
+        </li>
+        <li class="sidebar-icon">
+          <svg class="icon"><use xlink:href="../icons.svg#icon-week"></use></svg>
+          <span>Store</span>
+        </li>
+        <li class="sidebar-icon">
+          <svg class="icon"><use xlink:href="../icons.svg#icon-compass"></use></svg>
+          <span>Life</span>
+        </li>
+        <li class="sidebar-icon">
+            <svg class="icon"><use xlink:href="../icons.svg#icon-stats"></use></svg>
+          <span>Analysis</span>
+        </li>
+
+      </ul>
+
+      <div class="sidebar-wt">
+        <label for="menu-expander" class="clickable">
+          <svg class="icon icon-right-angle"><use xlink:href="../icons.svg#icon-right-angle"></use></svg>
+        </label>
+      </div>
+
+    </div>
+
+    <div class="content-container">
+
+      <div class="main-topbar">
+        <label for="menu-toggle" class="clickable">
+          <svg class="icon"><use xlink:href="../icons.svg#icon-menu"></use></svg>
+        </label>
+        <div class="page-title">Settings</div>
+
+        <div class="icon-group">
+
+          <a href="#" title="Search Projects">
+            <svg class="icon"><use xlink:href="../icons.svg#icon-search"></use></svg>
+          </a>
+          <a href="#" title="Notifications">
+            <svg class="icon"><use xlink:href="../icons.svg#icon-bell"></use></svg>
+            <span class="badge"></span>
+          </a>
+
+          <div class="dropdown-container">
+
+            <span class="clickable" title="user-account">
+              <svg class="icon"><use xlink:href="../icons.svg#icon-h-dots"></use></svg>
+            </span>
+
+            <div class="dropdown-content dropdown-activex">
+
+              <span style="background-color: rgba(181,181,181,0.15); color: #4D5256; height: 2.25em;
+                padding: 0.31em 1em; font-weight: bold;"> Hello Jassi </span>
+
+              <ul class="more-items">
+                <li class="more-item">Profile</li>
+                <li class="more-item">Help</li>
+                <li class="more-item">Focus Mode</li>
+              </ul>
+
+              <hr style=" height: 1px; background: #b5b5b5; opacity: 0.5;">
+
+              <ul class="more-items">
+                <li class="more-item">Settings</li>
+                <li class="more-item">Lock</li>
+                <li class="more-item">Log Out</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="tabs-group">
+        <span class="tab tab-active">Basic</span>
+        <span class="tab">Profile</span>
+        <span class="tab">Apps</span>
+      </div>
+            
+      <div class="content-box">
+        <div class="row">
+          <div class="vmenu">
+            <span class="vmenu-header"> Basic Settings </span>
+            <ul class="vmenu-list">
+              <li class="vmenu-list-item">Information</li>
+              <li class="vmenu-list-item vmenu-list-item--active">Account</li>
+              <li class="vmenu-list-item ">Profile</li>
+              <li class="vmenu-list-item">Notifications</li>
+              <li class="vmenu-list-item">Social</li>
+            </ul>
+          </div>
+          <div class="full-grow-column">
+              <div class="section">
+                  <div class="section-title"> Change Password </div>
+                  <form>
+                      <div class="form-group">
+                          <label class="form-label"> Old Password </label>
+                          <input type="password" class="form-control" id="" name="" size="30" value="">
+                      </div>
+                      <div class="form-group">
+                          <label class="form-label"> New Password </label>
+                          <input type="password" class="form-control" id="" name="" size="30" value="">
+                      </div>
+                      <div class="form-group">
+                          <label class="form-label"> Confirm Password </label>
+                          <input type="password" class="form-control" id="" name="" size="30" value="">
+                      </div>
+                      <p>
+                          <button class="btn btn-sm btn-blue"> Change Password </button>
+                          <span> <small>I forgot my password </small> </span>
+                      </p>
+
+                  </form>
+                  <p><small> Looking for two step authentication? You can find it in <a href="#"> Security </a></small> </p>
+              </div>
+              <div class="section">
+                  <div class="section-title"> Public Profile </div>
+
+                  <div class="form-group">
+                      <label class="form-label"> Name </label>
+                      <input type="text" class="form-control" id="" name="" size="40" value="Jaspreet Singh">
+                  </div>
+                  <div class="form-group">
+                      <label class="form-label"> Email </label>
+                      <input type="email" class="form-control" id="" name="" size="30" value="jaspreetsingh2379@gmail.com">
+                  </div>
+                  <div class="form-group">
+                      <label class="form-label"> Confirm Password </label>
+                      <input type="week" class="form-control" id="" name="" size="30" value="">
+                  </div>
+
+              </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>

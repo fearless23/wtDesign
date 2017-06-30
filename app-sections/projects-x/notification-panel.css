@@ -1,0 +1,23 @@
+.notification-panel {
+	position: fixed;
+    width: 20em;
+    height: 100%;
+    right: -20em;
+    top: 0;
+    background-color: white;
+    transition: all .31s linear;
+}
+
+.notification-panel.show-panel {
+	transform: translateX(-20em);
+    transition: all .31s linear;
+}
+
+.info-container {
+	width: 100%;
+	border-top: 1px solid #207967;
+	height: 5.07em;
+	background-color: rgb(33, 31, 31);
+	padding: 1.59em;
+	color: white;
+}

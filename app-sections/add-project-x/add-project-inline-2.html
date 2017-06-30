@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Week Tweak Styling</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link rel="stylesheet" type="text/css" href="../css/main-menu.css">
+        <link rel="stylesheet" type="text/css" href="../css/top-section.css">
+        <link rel="stylesheet" type="text/css" href="../css/add-project-4.css">
+        <link rel="stylesheet" type="text/css" href="../css/notification-panel.css">
+        <link rel="stylesheet" type="text/css" href="../css/search-box.css">
+        
+    </head>
+    <body style="height: 100%;">
+            <input type="checkbox" id="menu-toggle" name="menu-toggle" class="hidden">
+            <input type="checkbox" id="menu-expander" name="ert" class="hidden">
+            <div class="main-menu-container">
+                
+                <div class="user-area">
+                    <div class="user-img">
+                        <img src="http://www.saparch.com/public/widget/1_widget_john-doe.png"> 
+                    </div>
+                    <div class="user-account-info">
+                        <span>Jaspreet Singh</span>
+                        <ul >               
+                            <li>
+                                <svg class="icon icon-home">
+                                    <use xlink:href="../assets/svg/symbol-defs.svg#icon-user"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="icon icon-home">
+                                    <use xlink:href="../assets/svg/symbol-defs.svg#icon-cross"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="icon icon-home">
+                                    <use xlink:href="../assets/svg/symbol-defs.svg#icon-week"></use>
+                                </svg>
+                            </li>
+                        </ul>  
+                    </div>
+                      
+                </div>
+                
+
+                <ul class="sidebar-icon-list">
+                    <li class="sidebar-icon">
+                        <svg class="icon icon-home">
+                            <use xlink:href="../assets/svg/symbol-defs.svg#icon-home"></use>
+                        </svg>
+                        <span>Week</span>
+                    </li>
+                    <li class="sidebar-icon menu-active">
+                        <svg class="icon icon-settings">
+                            <use xlink:href="../assets/svg/symbol-defs.svg#icon-project2"></use>
+                        </svg>
+                        <span>Projects</span>
+                    </li>
+                    <li class="sidebar-icon" title="Life">
+                        <svg class="icon icon-settings">
+                            <use xlink:href="../assets/svg/symbol-defs.svg#icon-edit"></use>
+                        </svg>
+                        <span>Files</span>
+                    </li>
+                    <li class="sidebar-icon">
+                       <svg class="icon icon-settings">
+                            <use xlink:href="../assets/svg/symbol-defs.svg#icon-week"></use>
+                        </svg>
+                        <span>Store</span>
+                    </li>
+                    <li class="sidebar-icon">
+                        <svg class="icon icon-settings">
+                            <use xlink:href="../assets/svg/symbol-defs.svg#icon-compass"></use>
+                        </svg>
+                        <span>Life</span>
+                    </li>
+                    <li class="sidebar-icon">
+                        <svg class="icon icon-stats-dots">
+                            <use xlink:href="../assets/svg/symbol-defs.svg#icon-stats-dots"></use>
+                        </svg>
+                        <span>Analysis</span>
+                    </li>
+                </ul>
+                
+                <div class="sidebar-wt">
+                    <label for="menu-expander" class="clickable">
+                        <svg class="icon icon-right-angle">
+                            <use xlink:href="../assets/svg/symbol-defs.svg#icon-right-angle"></use>
+                        </svg>
+                    </label>
+                </div>
+            </div>
+
+            <div class="content-container">
+                
+                <div class="app-topbar blue">
+                    <div class="topbar-top-title">
+                        <label for="menu-toggle" class="clickable"> 
+                            <svg class="icon icon-menu">
+                                <use xlink:href="../assets/svg/symbol-defs.svg#icon-menu"></use>
+                            </svg>
+                        </label>
+                    </div>
+                    <div class="icon-group">
+                        <a href="#" title="Notifications">
+                            <svg class="icon icon-bell" viewBox="0 0 80 80">
+                                <use xlink:href="../assets/svg/symbol-defs.svg#icon-bell"></use>
+                            </svg>
+                        </a>
+                        <a href="#" title="Notifications">
+                            <svg class="icon icon-lock" viewBox="0 0 32 32">
+                                <use xlink:href="../assets/svg/symbol-defs.svg#icon-lock"></use>
+                            </svg>
+                        </a>
+                        <!--<span class="search-box-container">
+                            <input type="search" name="wt-search-box" id="wt-search-box" placeholder="search">
+                            <div class="search-help-container">
+                                <div class="search-cat">
+                                    <span> <img src="#"> </span>
+                                    <span> Projects</span>
+                                </div>
+
+                                <div class="search-cat">
+                                    <span> <img src="#"> </span>
+                                    <span> Steps</span>
+                                </div>
+
+                                <div class="search-cat">
+                                    <span> <img src="#"> </span>
+                                    <span> Tasks</span>
+                                </div>
+
+                                <div class="search-cat">
+                                    <span> <img src="#"> </span>
+                                    <span> Files</span>
+                                </div>
+
+                                <div class="search-cat">
+                                    <span> <img src="#"> </span>
+                                    <span> Apps</span>
+                                </div>
+
+                                <div class="search-cat">
+                                    <span> <img src="#"> </span>
+                                    <span> Notes</span>
+                                </div>
+                                
+                            </div>
+                        </span>-->
+                        
+                        <div class="dropdown-container">
+                            <span class="clickable" title="user-account">
+                                <svg class="icon icon-horizontal-dots" viewBox="0 0 20 20">
+                                    <use xlink:href="../assets/svg/symbol-defs.svg#icon-horizontal-dots"></use>
+                                </svg>
+                            </span>
+                            <div class="dropdown-content">
+                                <ul class="more-items">
+                                    <li class="more-item">Profile</li>
+                                    <li class="more-item">Settings</li>
+                                    <li class="more-item">Log Out</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="app-section-info">
+                    <div class="app-section-title">
+                        Jaspreet Singh Projects
+                    </div>
+                    
+                    <div class="icon-group fill-grey">
+                        <button class="btn btn-sm btn-red">+ New Project</button>
+                        <a href="#" title="Info">
+                            <svg class="icon icon-lock" viewBox="0 0 32 32">
+                                <use xlink:href="../assets/svg/symbol-defs.svg#icon-info"></use>
+                            </svg>
+                        </a>
+                        <a href="#" title="Search Projects">
+                            <svg class="icon icon-lock" viewBox="0 0 32 32">
+                                <use xlink:href="../assets/svg/symbol-defs.svg#icon-search"></use>
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="tabs-group">
+                    <span class="tab">Base</span>
+                    <span class="tab">Personal</span>
+                    <span class="tab">Pro</span>
+                    <span class="tab">Social</span>
+                </div>
+
+                <!-- ADD PROJECT -->
+                <div class="page-content-container">
+                    <div class="add-project-container">
+                        <input type="text" id="project-name" placeholder="Type project name here" autofocus="true">
+                        <label>Project Title</label>
+                        <div class="add-project-content-title">Choose a Category</div>
+                        <div class="project-nature-toggle">
+                            <input id="base" type="radio" name="project-category" class="hidden">
+                            <label for="base" >Base</label>
+                            <input id="personal" type="radio" name="project-category" class="hidden" checked>
+                            <label for="personal">Personal</label>
+                            <input id="pro" type="radio" name="project-category" class="hidden">
+                            <label for="pro" >Pro</label>
+                            <input id="social" type="radio" name="project-category" class="hidden">
+                            <label for="social" style="margin-right: 0;">Social</label>
+                        </div>
+                        <div class="add-project-content-selector">
+                            <textarea rows="2" cols="35" placeholder="Write something about this project"></textarea>
+                        </div>
+                       
+                        <div class="add-project-bottom">
+                          <button class="btn btn-sm">Reset</button>
+                          <button class="btn btn-blue btn-sm">Create Project</button>
+                        </div>
+                    </div>
+                </div>
+                
+            
+    
+                <div class="info-container">Info About Projects</div>
+
+            </div>
+
+            <div class="notification-panel "><!--show-panel-->
+                Notification Panel
+            </div>
+
+           
+
+ 
+    </body>
+</html>

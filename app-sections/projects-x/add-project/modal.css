@@ -1,0 +1,30 @@
+.modal-toggle {
+	cursor: pointer;
+}
+
+.modal-wrapper {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index:200;
+	background-color: hsla(0, 0%, 71%, 0.21);
+	align-items: center;
+	justify-content: center;
+}
+
+input[name="modal-toggle"]:checked + .modal-wrapper {
+	display: flex;
+	animation: slidein .22s ease-in;
+}
+
+@keyframes slidein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
