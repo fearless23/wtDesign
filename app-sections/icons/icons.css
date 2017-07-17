@@ -1,0 +1,19 @@
+.icon-group-container {
+  padding: 1.79em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icon-test-container {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-test-container svg.icon {
+  width: 4.02em;
+  height: 4.02em;
+  fill: #2ca58d;
+}

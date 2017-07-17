@@ -1,0 +1,60 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>Login V4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    <link rel="stylesheet" type="text/css" href="login-signup-v4.css">
+  </head>
+  <body>
+
+    <div class="login-wrapper">
+      <div class="overlay"></div>
+      <div class="login-container">
+        
+        <h1 class="wt-title">Week Tweak</h1>
+
+        <div class="tabs-group">
+          <span class="tab tab-active">Sign In</span>
+          <a href="signup-v4.html" class="tab">Sign Up</a>
+          <span class="tab">Google</span>
+        </div>
+
+        <div class="login-content">
+
+          <div class="welcome-msg">
+            <h2>Welcome back!</h2>
+            <h3>Sign in to continue to Week Tweak.</h3>
+          </div>
+          
+          <button (click)="loginGoogle()" class="btn btn-green btn-md btn-wide m-y-md center" id="google">
+            Login with google
+          </button>
+          <div style="text-align:center;" class="title m-y-md"> Or </div>
+          <form class="login-form m-y-md">
+            
+            <div class="form-group">
+              <input type="username"  placeholder="Username" class="form-control input-lg input-block" active>
+            </div>
+
+            <div class="form-group">
+              <input type="password"  placeholder="Password" class="form-control input-lg input-block">
+            </div>
+
+            <button type="button" class="btn btn-blue btn-md btn-wide m-y-md center">Login With Email</button>
+
+          </form>
+
+          <span class="error hidden" *ngIf="error">{{ error }}</span>
+
+        </div>
+        
+
+        
+
+      </div>
+    </div>
+
+
+  </body>
+</html>

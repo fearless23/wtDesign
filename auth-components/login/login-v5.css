@@ -1,0 +1,159 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #4d5256;
+}
+
+
+.login-container {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  overflow: auto;
+}
+
+@media (min-width: 40.94em) {
+  .login-container {
+    width: 25.74em;
+    min-height: 0;
+    height: initial;
+    margin-top: 8%;
+    box-shadow: 10px 10px 20px 0px #222425;
+  }
+}
+
+
+.login-form {
+  width: 22.92em;
+  margin: 0 auto;
+  padding: 1.19em;
+  background-color: #fff;
+}
+
+@media (min-width: 40.94em) {
+  .login-form {
+    width: 25.74em;
+    padding: 3.19em;
+  }
+}
+
+.login-form > * {
+  margin-bottom: 2em;
+}
+
+.login-form h1 {
+  font-size: 1.42em;
+  font-weight: bold;
+  text-transform: inherit;
+  letter-spacing: 0.1em;
+  margin: 0;
+  margin-bottom: 1.42em;
+}
+
+.login-form h2 {
+  font-size: 1.26em;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  margin: 0;
+  margin-bottom: 1.59em;
+}
+
+.btn-wide {
+  min-width: 10.18em;
+}
+
+
+.divider {
+  position: relative;
+  height: 20px;
+}
+
+.divider:before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #dadada;
+}
+
+.divider span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 20px;
+  padding: 0px 13px;
+  background: #fff;
+  font-size: 0.8em;
+}
+
+.login-intro {
+  display: none;
+}
+
+@media (min-width: 60em) {
+  .login-container {
+    display: flex;
+    width: 51.78em;
+    min-height: 0;
+    height: initial;
+    margin-top: 6%;
+  }
+
+  .login-intro {
+    display: block;
+    flex: 1;
+    background: burlywood;
+  }
+
+  .login-intro .slides-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .slide {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2em 2em 5em;
+    color: white;
+    background: black;
+  }
+
+  .slides-container input[type="radio"]:checked + .slide {
+    z-index: 12;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  label.slide-dot {
+    position: absolute;
+    z-index: 100;
+    bottom: 2em;
+    left: 10.52em;
+    width: 1em;
+    height: 1em;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .slides-container input[type="radio"]:checked ~ label {
+    background: #2ca58d;
+  }
+}
+
+.btn {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+}

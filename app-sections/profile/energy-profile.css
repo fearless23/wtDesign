@@ -1,0 +1,113 @@
+.container-wide {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em 1em;
+  font-size: 0.89em;
+}
+
+.ep-actions {
+  padding: 1em .5em;
+  margin-bottom: 1em;
+  border: 1px solid #dadada;
+  border-radius: 0.22em;
+}
+
+.ep-container {
+  border: 1px solid #dadada;
+}
+
+.ep-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #efefef;
+}
+
+.ep-header {
+  padding: .5em 0;
+  background: #fafafa;
+  font-weight: bold;
+  border-bottom: 1px solid #efefef;
+}
+
+.ep-col {
+  width: 28%;
+  padding: 0.63em;
+}
+
+.ep-col-sm {
+  width: 16%;
+  padding: 0.63em;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .ep-row {
+    flex-wrap: wrap;
+  }
+
+  .ep-col, .ep-col-sm {
+    width: 50%;
+  }
+}
+
+/* MODAL TOGGLE */
+
+input[name="ep-edit"]:checked + .modal-wrapper {
+  display: flex;
+  animation: slidein .22s ease-in; }
+
+@keyframes slidein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/* EP EDIT FORM */
+
+.modal-wrapper {
+  align-items: flex-start; /* override on main.css - align-items: center; */
+}
+
+.modal-content {
+  position: relative;
+  margin-top: 10%;
+  min-width: 18.18em;
+  max-width: 22.92em;
+  background-color: #fff;
+}
+
+@media (min-width: 28.91em) {
+  .modal-content {
+    min-width: 25.74em;
+    max-width: 32.46em;
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 201;
+  background: #818487;
+  padding: .5em;
+  border-radius: 50%;
+  transform: translate3D(50%, -50%,0);
+}
+
+.ep-edit {
+  padding: 1em;
+}
+
+.ep-edit .form-group {
+  margin: 1em 0;
+}
+
+.ep-edit .form-group label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  font-size: 0.8em;
+}

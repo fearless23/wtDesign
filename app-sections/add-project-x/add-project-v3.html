@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Project V3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://www.w3schools.com/lib/w3.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../includes/main.css">
+    <link rel="stylesheet" type="text/css" href="../includes/main-menu.css">
+    <link rel="stylesheet" type="text/css" href="../includes/top-section.css">
+
+    <link rel="stylesheet" type="text/css" href="./add-project-v3.css">
+
+  </head>
+  <body style="height: 100%;">
+    
+    <div w3-include-html="../includes/menu.html"></div>
+
+    <div class="content-container">
+
+      <div w3-include-html="../includes/top-section.html"></div>
+
+      <div class="tabs-group">
+        <span class="tab">Base</span>
+        <span class="tab tab-active">Personal</span>
+        <span class="tab">Pro</span>
+        <span class="tab">Social</span>
+      </div>
+
+      <!-- ADD PROJECT -->
+      <div class="page-content-container">
+        <div class="add-project-container">
+          <div class="add-project-title">Create New Project</div>
+          <div class="add-project-middle">
+            <div class="add-project-content">
+            <div class="add-project-content-title">Category</div>
+            <div class="add-project-content-selector">
+              <div class="project-nature-toggle">
+              <input id="base" type="radio" name="project-category" class="hidden">
+              <label for="base" >Base</label>
+              <input id="personal" type="radio" name="project-category" class="hidden" checked>
+              <label for="personal">Personal</label>
+              <input id="pro" type="radio" name="project-category" class="hidden">
+              <label for="pro" >Pro</label>
+              <input id="social" type="radio" name="project-category" class="hidden">
+              <label for="social" style="margin-right: 0;">Social</label>
+              </div>
+            </div>
+            </div>
+            <div class="add-project-content">
+            <div class="add-project-content-title">
+            <label for="project-name">Project Title</label>
+            </div>
+            <div class="add-project-content-selector">
+              <input type="text" id="project-name" placeholder="Learn painting">
+            </div>
+            </div>
+            <div class="add-project-content">
+            <div class="add-project-content-title">Summary</div>
+            <div class="add-project-content-selector">
+              <textarea rows="2" cols="35" placeholder="Learn oil painting this summer"></textarea>
+            </div>
+            </div>
+            <!--<div class="add-project-more_content">More Options</div>
+            <div class="add-project-content">
+            <div class="add-project-content-title">Nature</div>
+            <div class="add-project-content-selector">Base, Personal</div>
+            <select>
+              <option>Here is the first option</option>
+              <option>The second option</option>
+              <option>The third option</option>
+            </select>
+            </div>
+            <div class="add-project-content">
+            <div class="add-project-content-title">Role</div>
+            <div class="add-project-content-selector">Base, Personal</div>
+            </div>
+            <div class="add-project-content">
+            <div class="add-project-content-title">Type</div>
+            <div class="add-project-content-selector">Base, Personal</div>
+            </div>-->
+          </div>
+          <div class="add-project-bottom">
+            <button class="btn btn-sm">Reset</button>
+            <button class="btn btn-blue btn-sm">Create Project</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script>w3.includeHTML();</script>
+  </body>
+</html>

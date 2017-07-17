@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Minions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://www.w3schools.com/lib/w3.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../includes/main.css">
+    <link rel="stylesheet" type="text/css" href="../includes/main-menu.css">
+    <link rel="stylesheet" type="text/css" href="../includes/top-section.css">
+
+    <!-- PUT YOUR CSS HERE -->
+    <link rel="stylesheet" type="text/css" href="minions.css">
+  </head>
+
+  <body style="height: 100%;">
+
+    <div w3-include-html="../includes/menu.html"></div>
+
+    <div class="content-container">
+
+      <div w3-include-html="../includes/top-section.html"></div>
+      
+      <div class="container">
+
+        <h2>Switches</h2>
+        
+        <div class="wrapper">
+          <input type="checkbox" id="switch-toggle-v1" class="hidden">
+          <label for="switch-toggle-v1" class="clickable switch-v1"></label>   
+        </div>
+        
+        <div class="wrapper">
+          <input type="checkbox" id="switch-toggle-v2" class="hidden">
+          <label for="switch-toggle-v2" class="clickable switch-v2"></label>
+        </div>
+
+        <input class="form-control" list="mylist" />
+          <datalist id="mylist">
+            <option>Ada</option>
+            <option>Java</option>
+            <option>JavaScript</option>
+            <option>Brainfuck</option>
+            <option>LOLCODE</option>
+            <option>Node.js</option>
+            <option>Ruby on Rails</option>
+          </datalist>
+
+        <input class="form-control" data-list="Ada, Java, JavaScript, Brainfuck, LOLCODE, Node.js, Ruby on Rails" />
+      
+        <input type="range" list="ticks">
+          <datalist id="ticks">
+            <option>50</option>
+          </datalist>  
+        
+        <input type="color" value="#ff0066">
+        <input type="color" list="palette">
+          <datalist id="palette">
+            <option>#ff0066</option>
+            <option>#00aacc</option>
+          </datalist>
+        
+      <div>
+      
+      <div class="container">
+        <time itemprop="prepTime" datetime="PT20M">20 m</time>
+        <input type="email" name="home-email" autocomplete="home email"> 
+      </div>
+
+      <div class="container">
+        <input type="name">
+        <input type="range">
+        <input type="color">
+        
+        <input type="username">
+        
+        <input type="password">
+        
+        <input type="language">
+        <input type="sex">
+        
+        <input type="photo">
+        <input type="country">
+        
+        <input type="file">
+        <input type="cc-type">
+        <input type="number">
+
+      </div>
+      
+      <div class="container">
+      
+        <div class="accordion">
+          <details>
+            <summary>First section</summary> Content
+          </details>
+          <details>
+            <summary>Other section</summary> More Content
+          </details>
+          <details>
+            <summary>Third section</summary> Even More Content
+          </details>
+        </div>
+
+
+
+      </div>
+
+    </div>
+    <script>
+      document.body.addEventListener("toggle", evt => {
+        var accordion = evt.target.closest(".accordion");
+        if (evt.target.open && accordion) {
+          $$("details", accordion).forEach(details => {
+            if (details != evt.target) {
+              details.open = false;
+            }
+          });
+        }
+      }, true);
+    </script>
+    <script>w3.includeHTML();</script>
+
+  </body>
+</html>

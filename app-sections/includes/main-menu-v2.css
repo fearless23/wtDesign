@@ -1,0 +1,235 @@
+.main-menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  width: 4.52em;
+  height: 100%;
+  background-color: #FFFFFF;
+  color: #4d5256;
+  transition: width 0.31s ease-in;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-shadow: 4px 0px 4px 0px hsla(0, 0%, 71%, 0.21);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  min-height: 2.25em;
+  padding: 0.5em 0;
+  color: #2ca58d;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.79em; 
+  font-weight: bold;  
+}
+
+.logo span:first-child,.logo span:nth-child(2){
+  color: rgba(44, 165, 141, 0.71);
+}
+
+.logo span:nth-child(2n){
+  position: absolute;
+  width: 0;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.user-area {
+  min-height: 4.52em;
+  height: 5.07em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+}
+
+.user-area:hover {
+  cursor: pointer;
+  background: hsla(0, 0%, 71%, 0.21);
+}
+
+.user-area.profile-active {
+  border-left: 3px solid #2ca58d;
+}
+
+.user-img {
+  height: 3.19em;
+  width: 3.19em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.user-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.user-area .user-account-info {
+  display: none;
+  flex-direction: column;
+}
+
+.user-area .user-account-info ul {
+  display: flex;
+  margin-top: 0.5em;
+}
+
+.user-area .user-account-info ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5em;
+  border-radius: 50%;
+  border: 1px solid #B5B5B5;
+  cursor: pointer;
+  width: 1.79em;
+  height: 1.79em;
+  
+}
+
+.user-area .user-account-info ul li:hover {
+  opacity: 0.8;
+}
+
+.user-area .user-account-info ul li svg.icon{
+  width: 1em;
+}
+
+.sidebar-icon-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+  min-height: 25.74em;
+}
+
+.sidebar-icon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  width: 100%;
+  min-height: 4.02em;
+  height: 4.02em;
+  color: hsla(207, 6%, 32%, 0.71);
+  cursor: pointer;
+  transition: flex-direction 0.3s linear;
+}
+
+.sidebar-icon:hover {
+  color: #4d5256;
+  background: #efefef;
+}
+
+.sidebar-icon:hover svg.icon {
+  fill: #2ca58d;  
+}
+
+.sidebar-icon.menu-active, .sidebar-icon.menu-active:hover {
+  border-left: 3px solid #2ca58d;
+  color: #2ca58d;
+  background-color: white;
+  cursor: default;
+}
+
+.sidebar-icon.menu-active svg.icon, .sidebar-icon.menu-active:hover svg.icon {
+  fill: #2ca58d;
+}
+
+.sidebar-icon span {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 0.8em;
+}
+
+.menu-toggle-icon {
+  display: none;
+}
+
+@media (max-width: 40.94em) {
+  .menu-toggle-icon {
+    display: block;
+    position: absolute;
+    z-index: 110;
+    top: 0.71em;
+    top: 20em;
+    right: 1em; /*for demo only */
+  }
+
+  .main-menu-container {
+    width: 16.19em;
+    position: fixed;
+    left: -16.19em;
+    z-index: 110;
+    transform: translateX(0em);
+    transition: transform .3s ease-out;
+  }
+
+  input[name="menu-toggle"]:checked ~ .main-menu-container {
+    transform: translateX(16.19em);
+    transition: transform .3s ease-out;
+  }
+
+  .main-menu-container .user-area {
+    min-height: 5.7em;
+    height: 5.7em;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 1em;
+  }
+
+  .main-menu-container .user-area .user-img {
+    width: 4.52em;
+    height: 4.52em
+  }
+
+  .main-menu-container .user-area .user-account-info {
+    display: flex;
+    margin-left: 1em;
+    margin-top: .5em;
+  }
+
+  .main-menu-container .sidebar-icon-list {
+    min-height: 20.41em;
+  }
+
+  .main-menu-container .sidebar-icon-list .sidebar-icon {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 1em;
+    min-height: 3.19em;
+    height: 3.19em;
+  }
+
+  .main-menu-container .sidebar-icon-list .sidebar-icon span {
+    position: relative;
+    visibility: visible;
+    opacity: 1;    
+    margin-left: 1em;
+    transition: all .4s ease-in-out;
+  }
+
+  .logo span:nth-child(2n){
+    position: relative;
+    width: auto;
+    opacity: 1;
+    transition: all 0.2s linear;
+  }
+}

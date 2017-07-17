@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>WT SignUp V4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    <link rel="stylesheet" type="text/css" href="login-signup-v4.css">
+  </head>
+  <body>
+
+    <div class="login-wrapper">
+      <div class="login-container">
+        
+        <h1 class="wt-title">Week Tweak</h1>
+
+        <div class="tabs-group">
+          <a href="login-v4.html" class="tab">Sign In</a>
+          <span class="tab tab-active">Sign Up</span>
+          <span class="tab">Google</span>
+        </div>
+
+        <div class="login-content">
+
+          <div class="welcome-msg">
+            <h2>Welcome!</h2>
+            <h3>Sign up to start using Week Tweak.</h3>
+          </div>
+          
+          <button (click)="loginGoogle()" class="btn btn-green btn-md btn-wide m-y-md center" id="google">
+            Sign up with google
+          </button>
+          <div style="text-align:center;" class="title m-y-md"> Or </div>
+          <form class="login-form m-y-md">
+            
+            <div class="form-group">
+              <input type="text"  placeholder="Your Name" class="form-control input-lg input-block" active>
+            </div>
+
+            <div class="form-group">
+              <input type="email"  placeholder="Email" class="form-control input-lg input-block" active>
+            </div>
+
+            <div class="form-group">
+              <input type="password"  placeholder="Password" class="form-control input-lg input-block">
+            </div>
+
+            <button type="button" class="btn btn-blue btn-md btn-wide m-y-md center">Create Account</button>
+
+          </form>
+
+          <span class="error hidden" *ngIf="error">{{ error }}</span>
+
+        </div>
+        
+
+        
+
+      </div>
+    </div>
+
+
+  </body>
+</html>

@@ -1,0 +1,149 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>Steps V1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://www.w3schools.com/lib/w3.js"></script>
+    <link rel="stylesheet" type="text/css" href="../includes/main.css">
+    <link rel="stylesheet" type="text/css" href="../includes/main-menu.css">
+    <link rel="stylesheet" type="text/css" href="../includes/top-section.css">
+
+    <link rel="stylesheet" type="text/css" href="steps-v1.css">
+
+  </head>
+  <body style="height: 100%;">
+    <div w3-include-html="../includes/menu.html"></div>
+
+    <div class="content-container">
+
+      <div w3-include-html="../includes/top-section.html"></div>
+      <div class="tabs">
+        <span class="tab">Overview</span>
+        <span class="tab active">Steps</span>
+        <span class="tab">List</span>
+        <span class="tab">Progress</span>
+      </div>
+
+      <div class="container">
+          <label for="step-toggle" class="clickable step-toggle">Toggle</label>
+          <input type="checkbox" name="step-toggle" id="step-toggle" class="hidden">
+          <div class="left-container">
+              <h4 style="text-align: center">Action Steps</h4>
+
+              <div class="steps-container">
+                  <div class="action-step clickable">
+                      <div class="step-progress"></div>
+                      <div class="step-description">
+                          <div>Read a book blah blah blah</div>
+                          <div class="step-more">...</div>
+                      </div>
+                  </div>
+                  <div class="action-step clickable action-step-active">
+                      <div class="step-progress"></div>
+                      <div class="step-description">
+                          <div>Read a book Read a book Read a boead a book Read a book </div>
+                          <div class="step-more">...</div>
+                      </div>
+                  </div>
+                  <div class="action-step clickable">
+                      <div class="step-progress"></div>
+                      <div class="step-description">
+                          <div>Read a book blah blah blah</div>
+                          <div class="step-more">
+                              <div class="step-action">Not Active This Week</div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="action-step clickable">
+                      <div class="step-progress">
+                          <div class="wer"></div>
+                      </div>
+                      <div class="step-description">
+                          <div>Read a book blah blah blbook Read a book </div>
+                          <div class="step-more">
+                              <div class="step-action step-active">Active This Week</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="step-add">
+                  <h6>Add an action step</h6>
+                  <input type="text" name="">
+                  <button class="btn btn-sm btn-blue">+</button>
+              </div>
+              <br>
+          </div>
+          <div class="right-container">
+              <div class="task-container">
+                  <div class="task">
+                      <div class="task-details">
+                          <input type="checkbox" name="task-checkbox" id="task1" class="hidden">
+                          <label for="task1" class="task-title">HJTKGKTKGKG</label>
+                          <div class="task-open">></div>
+                      </div>
+                      <div class="task-info">More</div>
+                  </div>
+                  <div class="task">
+                      <div class="task-details">
+                          <input type="checkbox" name="task-checkbox" id="task2" class="hidden">
+                          <label for="task2" class="task-title">HJTKGKTKGKG</label>
+                          <div class="task-open">></div>
+                      </div>
+                      <div class="task-info">More</div>
+                  </div>
+                  <div class="task">
+                      <div class="task-details">
+                          <input type="checkbox" name="task-checkbox" id="task3" class="hidden">
+                          <label for="task3" class="task-title">HJTKGKTKGKG</label>
+                          <div class="task-open">></div>
+                      </div>
+                      <div class="task-info">More</div>
+                  </div>
+                  <div class="task">
+                      <div class="task-details">
+                          <input type="checkbox" name="task-checkbox" id="task4" class="hidden">
+                          <label for="task4" class="task-title">HJTKGKTKGKG</label>
+                          <div class="task-open">></div>
+                      </div>
+                      <div class="task-info">More</div>
+                  </div>
+                  <div class="task">
+                      <div class="task-details">
+                          <input type="checkbox" name="task-checkbox" id="task5" class="hidden">
+                          <label for="task5" class="task-title">HJTKGKTKGKG</label>
+                          <div class="task-open">></div>
+                      </div>
+                      <div class="task-info">More</div>
+                  </div>
+                  <div class="task">
+                      <div class="task-details">
+                          <input type="checkbox" name="task-checkbox" id="task6" class="hidden">
+                          <label for="task6" class="task-title">HJTKGKTKGKG</label>
+                          <div class="task-open">></div>
+                      </div>
+                      <div class="task-info">More</div>
+                  </div>
+
+
+                  <div class="task-add">
+                      <h6>Add an Task / To-do</h6>
+                      <input type="text" name="">
+                      <button class="btn btn-sm btn-blue">Add</button>
+                  </div>
+
+              </div>
+
+
+          </div>
+      </div>
+
+
+    </div>
+
+    <script>
+      w3.includeHTML();
+    </script>
+
+  </body>
+</html>

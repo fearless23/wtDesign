@@ -1,0 +1,69 @@
+.epc-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------- Circular Bar -----------*/
+.circular-bar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8.07em;
+  height: 8.07em;
+}
+
+.circular-bar span {
+  font-size: 2em;
+}
+
+.slice {
+  position: absolute;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slice .bar {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 10px solid #efefef;
+  border-radius: 50%;
+}
+
+.slice .fill {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 10px solid #2ca58d;
+  border-radius: 50%;
+}
+
+.fill.c25 {
+  border-top: 10px solid transparent;
+}

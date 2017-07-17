@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Energy Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://www.w3schools.com/lib/w3.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../includes/main.css">
+    <link rel="stylesheet" type="text/css" href="../includes/main-menu-v2.css">
+    <link rel="stylesheet" type="text/css" href="../includes/top-section.css">
+
+    <!-- PUT YOUR CSS HERE -->
+    <link rel="stylesheet" type="text/css" href="./energy-profile.css">
+
+  </head>
+
+  <body style="height: 100%;">
+    <div class="slim-loading-bar" style="position:fixed; z-index:999; top:0; width:80%; height: 2px; background: #00a8e8;"></div>
+    <div w3-include-html="../includes/menu.html"></div>
+
+    <div class="content-container">
+
+      <div w3-include-html="../includes/top-section.html"></div>
+      <div class="tabs">
+        <a href="./profile.html" class="tab">Profile</a>
+        <span class="tab active">Energy</span>
+        <a href="./type.html" class="tab">Type</a>
+      </div>
+
+      <div class="container-wide">
+        
+        <h2 class="title title-lg"> Energy Profile </h2>
+        <p> Manage your Energy, not time - Harvard Business Review </p>         
+        <div class="fbox-sb ep-actions">
+          <div class="title">All Week </div>
+          <select class="form-select">
+            <option> Sun </option>
+            <option> Mon </option>
+            <option> Tue </option>
+            <option> Wed </option>
+            <option> Thu </option>
+            <option> Fri </option>
+            <option> Sat </option>
+          </select>
+        </div>
+
+        <div class="ep-container">
+
+          <div class="ep-row ep-header">
+            <div class="ep-col">Name</div>
+            <div class="ep-col">Time</div>
+            <div class="ep-col">Energy</div> 
+            <div class="ep-col-sm">Actions</div>  
+          </div>
+
+          <div class="ep-row">
+            <div class="ep-col">Sleep</div>
+            <div class="ep-col">11PM - 7AM</div>
+            <div class="ep-col">Rest</div>
+            <div class="ep-col-sm">
+              <label for="ep-edit" class="icon-container" style="margin-right: 0.5em" title="Edit this time">
+                <svg class="icon"><use xlink:href="../icons.svg#icon-tag"></use></svg>
+              </label>
+              <span class="icon-container" title="Delete this time">
+                <svg class="icon"><use xlink:href="../icons.svg#icon-del"></use></svg>
+              </span>
+            </div>
+            
+          </div>
+
+          <div class="ep-row">
+            <div class="ep-col">Morning</div>
+            <div class="ep-col">7am - 10am</div>
+            <div class="ep-col">High</div>
+            
+          </div>
+
+          <div class="ep-row">
+            <div class="ep-col">Late Morning</div>
+            <div class="ep-col">10am - 12noon</div>
+            <div class="ep-col">Med</div>
+            
+          </div>
+
+        </div>
+
+        <div class="ep-actions m-y-md">
+          add-a-energy-profile
+        </div>
+
+      </div>
+
+      
+
+    </div>
+
+    <input type="checkbox" id="ep-edit" name="ep-edit" class="hidden">
+    <div class="modal-wrapper">
+
+      <div class="modal-content">
+
+        <label for="ep-edit" class="modal-close icon-container">
+            <svg class="icon icon-white"><use xlink:href="../icons.svg#icon-cross"></use></svg>
+        </label>
+        
+        <div class="ep-edit">
+          <div class="title m-y-md">Edit Energy Profile</div>
+
+          <div class="form-group">
+            <label> Name </label>
+            <input type="text" placeholder="Sleep" class="form-control input-sm input-block">
+          </div>
+
+          <div class="form-group">
+            <label> Time </label>
+            <div>
+              <span w3-include-html="./time-select.html"></span> 
+              to 
+              <span w3-include-html="./time-select.html"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label> Energy </label>
+            <select class="form-select">
+              <option> Rest </option>
+              <option> High </option>
+              <option> Medium </option>
+              <option> Low </option>
+            </select>
+          </div>
+          
+          <div class="fbox-sb m-y-md">
+            <div></div>
+
+            <div>
+              <button class="btn btn-white m-x"> Reset </button>
+              <button class="btn btn-green"> Save Options </button>
+            </div>
+
+          </div>
+          
+
+        </div>
+      </div>
+    </div>
+
+    <script>w3.includeHTML();</script>
+  </body>
+</html>

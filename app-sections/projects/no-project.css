@@ -1,0 +1,21 @@
+.no-project-blankslate {
+  padding: 2em 1em;
+  background-color: #fff;
+}
+
+.no-project-img{
+  max-width: 20em;
+  max-height: 20em;
+  mix-blend-mode: multiply;
+}
+
+.blankslate-title {
+  font-size: 1.79em;
+  font-weight: bold;
+  color: #818487;
+}
+
+.blankslate-summary {
+  font-size: 1.42em;
+  font-weight: 300;
+}

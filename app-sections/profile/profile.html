@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://www.w3schools.com/lib/w3.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../includes/main.css">
+    <link rel="stylesheet" type="text/css" href="../includes/main-menu.css">
+    <link rel="stylesheet" type="text/css" href="../includes/top-section.css">
+
+    <!-- PUT YOUR CSS HERE -->
+    <link rel="stylesheet" type="text/css" href="./profile.css">
+
+  </head>
+
+  <body style="height: 100%;">
+ 
+    <div w3-include-html="../includes/menu.html"></div>
+
+    <div class="content-container">
+
+      <div w3-include-html="../includes/top-section.html"></div>
+      <div class="tabs-group">
+        <span class="tab tab-active">Profile</span>
+        <a href="./energy-profile.html" class="tab">Energy</a>
+        <a href="./type.html" class="tab">Type</a>
+      </div>
+
+      <div class="profile-container">
+
+        <div class="section">
+          <div class="section-title"> Change Password </div>
+            <form>
+              <div class="form-group">
+                <label class="form-label"> Old Password </label>
+                <input type="password" class="form-control" id="" name="" size="30" value="">
+              </div>
+              <div class="form-group">
+                <label class="form-label"> New Password </label>
+                <input type="password" class="form-control" id="" name="" size="30" value="">
+              </div>
+              <div class="form-group">
+                <label class="form-label"> Confirm Password </label>
+                <input type="password" class="form-control" id="" name="" size="30" value="">
+              </div>
+              <p>
+                <button class="btn btn-sm btn-blue"> Change Password </button>
+                <span> <small>I forgot my password </small> </span>
+              </p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <script>w3.includeHTML();</script>
+  </body>
+</html>

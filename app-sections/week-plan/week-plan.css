@@ -1,0 +1,269 @@
+em {
+  font-style: normal;
+}
+/* -------------------------------- 
+
+Main Components 
+
+-------------------------------- */
+.cd-schedule {
+  position: relative;
+  margin: 2em 0;
+}
+
+.cd-schedule::before {
+  /* never visible - this is used in js to check the current MQ */
+  content: 'mobile';
+  display: none;
+}
+
+@media only screen and (min-width: 800px) {
+  .cd-schedule {
+    width: 90%;
+    max-width: 1400px;
+    margin: 2em auto;
+  }
+  .cd-schedule::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+  .cd-schedule::before {
+    content: 'desktop';
+  }
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  padding: 1em;
+}
+
+.container .events-group {
+  margin-bottom: 30px;
+  border-bottom: 2px solid #dadada;
+}
+
+.top-info {
+  width: 100%;
+  line-height: 1.5;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+.events-group > ul {
+  position: relative;
+  margin-bottom: 1.26em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.single-event {
+  height: 10.18em;
+  width: 20.41em;
+  border: 2px solid #dadada;
+  box-shadow: 3px 3px 6px #efefef;
+  margin-right: 1.42em;
+  margin-bottom: 1.42em;
+  transition: opacity .2s, background .2s;
+  background: #fff;
+}
+
+.single-event {
+  animation: opacity .31s linear;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.single-event:hover {
+  background: #f5f5f5;
+}
+
+.single-event a {
+  display: block;
+  height: 100%;
+  padding: .8em;
+}
+
+.event-name,
+.event-date {
+  display: block;
+  color: #4d5256;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0.44em 0;
+}
+
+.event-name {
+  font-size: 1.26em;
+}
+
+@media only screen and (min-width: 800px) {
+  .event-name {
+    font-size: 1.12em;
+  }
+}
+
+.event-date {
+  opacity: .7;
+}
+
+
+/* Event Modal */
+
+.event-modal {
+  position: fixed;
+  z-index: 113;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  /* Force Hardware acceleration */
+  transform: translateZ(0);
+  transform: translateX(100%);
+  transition: transform .4s, visibility .4s;
+  transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+
+
+.event-modal .header {
+  position: relative;
+  z-index: 103;
+  height: 70px;
+  width: 100%;
+  background: #f5f5f5;
+  padding: .6em 5%;
+}
+
+.event-modal .header {
+  transform-origin: top center;
+}
+
+.event-modal .event-date {
+  display: none;
+}
+
+.event-modal .event-info {
+  position: relative;
+  z-index: 102;
+  width: 100%;
+  height: calc(100% - 70px);/* 70px is the .header height */
+  background: white;
+  overflow: hidden;
+}
+
+.event-modal .event-info {
+  transform-origin: top left;
+}
+
+.event-modal .event-info > div {
+  overflow: auto;
+  padding: 1.4em 5%;
+  height: 100%;
+}
+
+
+
+
+.event-modal .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 103;
+  background: rgba(0, 0, 0, 0.1);
+  height: 70px;
+  width: 70px;
+}
+
+
+
+
+@media only screen and (min-width: 800px) {
+
+  .event-modal {
+    width: auto;
+    height: auto;
+    transform: translateX(0);
+    will-change: transform, width, height;
+    transition: height .4s, width .4s, transform .4s, visibility .4s;
+    transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+  }
+
+  .event-modal {
+    top: 10%;
+    left: 0;
+    right: 0;
+    max-width: 46em;
+    margin: 0 auto;
+  }
+
+  .event-modal .header {
+    height: auto;
+    padding: .8em;
+  }
+
+  .event-modal .event-info {
+    padding: 2em 3em 2em 2em;
+  }
+
+  .event-modal .header, .event-modal .event-info {
+    /* Force Hardware acceleration */
+    transform: translateZ(0);
+    will-change: transform;
+    backface-visibility: hidden;
+  }
+
+  .event-modal .header {
+    transition: transform .4s;
+    transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+  }
+
+  .event-modal .event-date {
+    display: block;
+  }
+
+  .event-modal .close {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .event-modal .header {
+    padding: 1.2em;
+  }
+}
+
+.event-modal.modal-is-open {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+
+.cover-layer { 
+  position: fixed;
+  z-index: 102;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .4s, visibility .4s;
+}
+
+.cover-layer.modal-is-open  {
+  opacity: 1;
+  visibility: visible;
+}

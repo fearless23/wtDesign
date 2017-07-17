@@ -3,10 +3,11 @@
   <head>
     <title>Week Tweak Styling</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://www.w3schools.com/lib/w3.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="../main.css">
-    <link rel="stylesheet" type="text/css" href="../main-menu.css">
-    <link rel="stylesheet" type="text/css" href="../top-section.css">
+    <link rel="stylesheet" type="text/css" href="../includes/main.css">
+    <link rel="stylesheet" type="text/css" href="../includes/main-menu.css">
+    <link rel="stylesheet" type="text/css" href="../includes/top-section.css">
 
     <!-- PUT YOUR CSS HERE -->  
     <link rel="stylesheet" type="text/css" href="home-cards.css">
@@ -14,68 +15,7 @@
   </head>
   <body style="height: 100%;">
 
-    <input type="checkbox" id="menu-toggle" name="menu-toggle" class="hidden">
-    
-    <div class="main-menu-container">
-     
-      <div class="user-area">
-
-        <div class="user-img"><img src="../img/diana.jpg"></div>
-
-        <div class="user-account-info">
-          <span>Jaspreet Singh</span>
-          <ul >
-            <li>
-              <svg class="icon"><use xlink:href="../icons.svg#icon-arrow-up"></use></svg>
-            </li>
-            <li>
-              <svg class="icon"><use xlink:href="../icons.svg#icon-cross"></use></svg>
-            </li>
-            <li>
-              <svg class="icon"><use xlink:href="../icons.svg#icon-week"></use></svg>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-
-      <ul class="sidebar-icon-list">
-
-        <li class="sidebar-icon">
-          <svg class="icon"><use xlink:href="../icons.svg#icon-home"></use></svg>
-          <span>Week</span>
-        </li>
-        <li class="sidebar-icon menu-active">
-          <svg class="icon"><use xlink:href="../icons.svg#icon-project"></use></svg>
-          <span>Projects</span>
-        </li>
-        <li class="sidebar-icon" title="Life">
-          <svg class="icon"><use xlink:href="../icons.svg#icon-plus"></use></svg>
-          <span>Files</span>
-        </li>
-        <li class="sidebar-icon">
-          <svg class="icon"><use xlink:href="../icons.svg#icon-week"></use></svg>
-          <span>Store</span>
-        </li>
-        <li class="sidebar-icon">
-          <svg class="icon"><use xlink:href="../icons.svg#icon-compass"></use></svg>
-          <span>Life</span>
-        </li>
-        <li class="sidebar-icon">
-            <svg class="icon"><use xlink:href="../icons.svg#icon-stats"></use></svg>
-          <span>Analysis</span>
-        </li>
-
-      </ul>
-
-      <div class="logo">
-        <span>w</span>
-        <span>eek</span>
-        <span>t</span>
-        <span>weak</span>
-      </div>
-
-    </div>
+    <div w3-include-html="../includes/menu.html"></div>
 
     <div class="content-container" >
       
@@ -114,7 +54,7 @@
 
     </div>
 
-           
+    <script>w3.includeHTML();</script>       
 
  
   </body>

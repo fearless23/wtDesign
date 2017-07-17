@@ -1,418 +1,147 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Week Tweak Styling</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="../main.css">
-        <link rel="stylesheet" type="text/css" href="../main-menu-original.css">
-        <link rel="stylesheet" type="text/css" href="../top-section.css">
-        <link rel="stylesheet" type="text/css" href="project-cards-v4.css">
-    </head>
-    <body style="height: 100%;">
-            <input type="checkbox" id="menu-toggle" name="menu-toggle" class="hidden">
-            <input type="checkbox" id="menu-expander" name="ert" class="hidden">
-            <div class="main-menu-container">
-                
-                
-                <div class="user-area">
-                    <div class="user-img">
-                        <img src="http://www.saparch.com/public/widget/1_widget_john-doe.png"> 
-                    </div>
-                    <div class="user-account-info">
-                        <span>Jaspreet Singh</span>
-                        <ul >               
-                            <li>
-                                <svg class="icon icon-home">
-                                    <use xlink:href="../icons.svg#icon-user"></use>
-                                </svg>
-                            </li>
-                            <li>
-                                <svg class="icon icon-home">
-                                    <use xlink:href="../icons.svg#icon-cross"></use>
-                                </svg>
-                            </li>
-                            <li>
-                                <svg class="icon icon-home">
-                                    <use xlink:href="../icons.svg#icon-week"></use>
-                                </svg>
-                            </li>
-                        </ul>  
-                    </div>
-                      
-                </div>
-                
+  <head>
+    <title>Projects V4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://www.w3schools.com/lib/w3.js"></script>
 
-                <ul class="sidebar-icon-list">
-                    <li class="sidebar-icon">
-                        <svg class="icon icon-home">
-                            <use xlink:href="../icons.svg#icon-home"></use>
-                        </svg>
-                        <span>Week</span>
-                    </li>
-                    <li class="sidebar-icon menu-active">
-                        <svg class="icon icon-settings">
-                            <use xlink:href="../icons.svg#icon-project"></use>
-                        </svg>
-                        <span>Projects</span>
-                    </li>
-                    <li class="sidebar-icon" title="Life">
-                        <svg class="icon icon-settings">
-                            <use xlink:href="../icons.svg#icon-plus"></use>
-                        </svg>
-                        <span>Files</span>
-                    </li>
-                    <li class="sidebar-icon">
-                       <svg class="icon icon-settings">
-                            <use xlink:href="../icons.svg#icon-week"></use>
-                        </svg>
-                        <span>Store</span>
-                    </li>
-                    <li class="sidebar-icon">
-                        <svg class="icon icon-settings">
-                            <use xlink:href="../icons.svg#icon-compass"></use>
-                        </svg>
-                        <span>Life</span>
-                    </li>
-                    <li class="sidebar-icon">
-                        <svg class="icon icon-stats-dots">
-                            <use xlink:href="../icons.svg#icon-stats"></use>
-                        </svg>
-                        <span>Analysis</span>
-                    </li>
-                </ul>
-                
-                <div class="sidebar-wt">
-                    <label for="menu-expander" class="clickable">
-                        <svg class="icon icon-right-angle">
-                            <use xlink:href="../icons.svg#icon-right-angle"></use>
-                        </svg>
-                    </label>
-                </div>
+    <link rel="stylesheet" type="text/css" href="../includes/main.css">
+    <link rel="stylesheet" type="text/css" href="../includes/main-menu.css">
+    <link rel="stylesheet" type="text/css" href="../includes/top-section.css">
 
-                <div class="logo">
-                    <span>w</span>
-                    <span>eek</span>
-                    <span>t</span>
-                    <span>weak</span>
-                </div>
+    <link rel="stylesheet" type="text/css" href="projects-v4.css">
 
+  </head>
+  <body style="height: 100%;">
+      
+    <div w3-include-html="../includes/menu.html"></div>
+
+    <div class="content-container">
+        
+        <div w3-include-html="../includes/top-section.html"></div>
+        
+        <div class="tabs">
+          <span class="tab">Base</span>
+          <span class="tab active">Personal</span>
+          <span class="tab">Pro</span>
+          <span class="tab">Social</span>
+        </div>
+        
+         <div class="fbox-sb p-y-md p-x">
+          <div></div>
+          <button class="btn btn-blue">+ Add New Project </button>
+        </div>
+        <!-- ============== PROJECTS CATEGORIES TAB ============== -->
+
+        <div class="card-group-container">
+          <!-- CARD -->
+          <div class="card-container">
+            <div class="card-top learn">
+              <span class="project-type">Learn</span>
+              <div class="blur"></div>
             </div>
-
-            <div class="content-container">
-                
-                <div class="main-topbar">
-                    <label for="menu-toggle" class="clickable"> 
-                        <svg class="icon icon-menu">
-                            <use xlink:href="../icons.svg#icon-menu"></use>
-                        </svg>
-                    </label>
-                    <div class="page-title">Personal Projects</div>
-                   
-                    <div class="icon-group">
-                        <a class="icon-container" href="#" title="Search Projects">
-                            <svg class="icon icon-lock" viewBox="0 0 32 32">
-                                <use xlink:href="../icons.svg#icon-search"></use>
-                            </svg>
-                        </a>
-                       
-                        <a class="icon-container" href="#" title="Notifications">
-                            <svg class="icon icon-bell" viewBox="0 0 80 80">
-                                <use xlink:href="../icons.svg#icon-bell"></use>
-                            </svg>
-                            <span class="badge"></span>
-                        </a>
-                        
-
-                        <div class="dropdown-container">
-                            <span class="icon-container clickable" title="user-account">
-                                <svg class="icon icon-horizontal-dots" viewBox="0 0 20 20">
-                                    <use xlink:href="../icons.svg#icon-h-dots"></use>
-                                </svg>
-                            </span>
-                            <div class="dropdown-content">
-                                <ul class="more-items">
-                                    <li class="more-item">Profile</li>
-                                    <li class="more-item">Settings</li>
-                                    <li class="more-item">Log Out</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                
-                <div class="tabs-group">
-                    <span class="tab">Base</span>
-                    <span class="tab tab-active">Personal</span>
-                    <span class="tab">Pro</span>
-                    <span class="tab">Social</span>
-                </div>
-
-                <div class="filter-bar">
-                    <button class="btn btn-sm btn-blue">+ Add New Project </button>
-                </div>
-
-                 <div class="card-group-container">
-                    <!-- CARD -->
-                    <div class="card-container">
-  
-                        <div class="card-header">
-                            <div class="title">Summer Painting </div>  
-                            <div class="dropdown-container">
-                                <span class="icon-container clickable">
-                                  <svg class="icon"><use xlink:href="../icons.svg#icon-v-dots"></use> </svg>
-                                </span>
-                                <div class="dropdown-content dropdown-activex">
-                                    <ul class="more-items">
-                                        <li class="more-item">Settings</li>
-                                        <li class="more-item">Progress</li>
-                                    </ul>
-                                    <hr>
-                                    <ul class="more-items">
-                                        <li class="more-item">Mark As Done</li>
-                                        <li class="more-item">Edit</li>
-                                        <li class="more-item delete">Delete</li>
-                                    </ul>   
-                                </div>
-                            </div>
-                        </div>
-                        <div class="description">Complete 3 paintings this summer</div>
-                        <div class="activity"> Last active 3 days ago. </div>
-                        <div class="project-details">
-
-                            <div class="info">
-                                <span>12</span>
-                                <span>Steps</span>
-                            </div>
-                            <div class="info">
-                                <span>02</span>
-                                <span>Tasks</span>
-                            </div>
-                            <div class="info">
-                                <span>02</span>
-                                <span>Week</span>
-                            </div>    
-
-                        </div>
-                        <div class="project-progress">
-                            <span>12 / 24 Tasks Done</span>
-                        </div>
-                        <div class="project-actions">
-                            <span class="project-active">Active</span>
-                            <button type="button" class="btn btn-sm btn-outline">View</button>
-                        </div>
-                    </div>
-                    <!-- CARD -->
-                    <div class="card-container">
-  
-                        <div class="card-header">
-                            <div class="title">Summer Painting </div>  
-                            <div class="dropdown-container">
-                                <span class="icon-container clickable">
-                                  <svg class="icon"><use xlink:href="../icons.svg#icon-v-dots"></use> </svg>
-                                </span>
-                                <div class="dropdown-content dropdown-activex">
-                                    <ul class="more-items">
-                                        <li class="more-item">Settings</li>
-                                        <li class="more-item">Progress</li>
-                                    </ul>
-                                    <hr>
-                                    <ul class="more-items">
-                                        <li class="more-item">Mark As Done</li>
-                                        <li class="more-item">Edit</li>
-                                        <li class="more-item delete">Delete</li>
-                                    </ul>   
-                                </div>
-                            </div>
-                        </div>
-                        <div class="description">Complete 3 paintings this summer</div>
-                        <div class="activity"> Last active 3 days ago. </div>
-                        <div class="project-details">
-
-                            <div class="info">
-                                <span>12</span>
-                                <span>Steps</span>
-                            </div>
-                            <div class="info">
-                                <span>02</span>
-                                <span>Tasks</span>
-                            </div>
-                            <div class="info">
-                                <span>02</span>
-                                <span>Week</span>
-                            </div>    
-
-                        </div>
-                        <div class="project-progress">
-                            <span>12 / 24 Tasks Done</span>
-                        </div>
-                        <div class="project-actions">
-                            <span class="project-active">Active</span>
-                            <button type="button">View</button>
-                        </div>
-                    </div>
-                    <!-- CARD -->
-                    <div class="card-container">
-  
-                        <div class="card-header">
-                            <div class="title">Summer Painting </div>  
-                            <div class="dropdown-container">
-                                <span class="icon-container clickable">
-                                  <svg class="icon"><use xlink:href="../icons.svg#icon-v-dots"></use> </svg>
-                                </span>
-                                <div class="dropdown-content dropdown-activex">
-                                    <ul class="more-items">
-                                        <li class="more-item">Settings</li>
-                                        <li class="more-item">Progress</li>
-                                    </ul>
-                                    <hr>
-                                    <ul class="more-items">
-                                        <li class="more-item">Mark As Done</li>
-                                        <li class="more-item">Edit</li>
-                                        <li class="more-item delete">Delete</li>
-                                    </ul>   
-                                </div>
-                            </div>
-                        </div>
-                        <div class="description">Complete 3 paintings this summer</div>
-                        <div class="activity"> Last active 3 days ago. </div>
-                        <div class="project-details">
-
-                            <div class="info">
-                                <span>12</span>
-                                <span>Steps</span>
-                            </div>
-                            <div class="info">
-                                <span>02</span>
-                                <span>Tasks</span>
-                            </div>
-                            <div class="info">
-                                <span>02</span>
-                                <span>Week</span>
-                            </div>    
-
-                        </div>
-                        <div class="project-progress">
-                            <span>12 / 24 Tasks Done</span>
-                        </div>
-                        <div class="project-actions">
-                            <span class="project-active">Active</span>
-                            <button type="button">View</button>
-                        </div>
-                    </div>
-                    <!-- CARD -->
-                    <div class="card-container">
-  
-                        <div class="card-header">
-                            <div class="title">Summer Painting </div>  
-                            <div class="dropdown-container">
-                                <span class="icon-container clickable">
-                                  <svg class="icon"><use xlink:href="../icons.svg#icon-v-dots"></use> </svg>
-                                </span>
-                                <div class="dropdown-content dropdown-activex">
-                                    <ul class="more-items">
-                                        <li class="more-item">Settings</li>
-                                        <li class="more-item">Progress</li>
-                                    </ul>
-                                    <hr>
-                                    <ul class="more-items">
-                                        <li class="more-item">Mark As Done</li>
-                                        <li class="more-item">Edit</li>
-                                        <li class="more-item delete">Delete</li>
-                                    </ul>   
-                                </div>
-                            </div>
-                        </div>
-                        <div class="description">Complete 3 paintings this summer</div>
-                        <div class="activity"> Last active 3 days ago. </div>
-                        <div class="project-details">
-
-                            <div class="info">
-                                <span>12</span>
-                                <span>Steps</span>
-                            </div>
-                            <div class="info">
-                                <span>02</span>
-                                <span>Tasks</span>
-                            </div>
-                            <div class="info">
-                                <span>02</span>
-                                <span>Week</span>
-                            </div>    
-
-                        </div>
-                        <div class="project-progress">
-                            <span>12 / 24 Tasks Done</span>
-                        </div>
-                        <div class="project-actions">
-                            <span class="project-active">Active</span>
-                            <button type="button">View</button>
-                        </div>
-                    </div>
-                    <!-- CARD -->
-                    <div class="card-container">
-  
-                        <div class="card-header">
-                            <div class="title">Summer Painting </div>  
-                            <div class="dropdown-container">
-                                <span class="icon-container clickable">
-                                  <svg class="icon"><use xlink:href="../icons.svg#icon-v-dots"></use> </svg>
-                                </span>
-                                <div class="dropdown-content dropdown-activex">
-                                    <ul class="more-items">
-                                        <li class="more-item">Settings</li>
-                                        <li class="more-item">Progress</li>
-                                    </ul>
-                                    <hr>
-                                    <ul class="more-items">
-                                        <li class="more-item">Mark As Done</li>
-                                        <li class="more-item">Edit</li>
-                                        <li class="more-item delete">Delete</li>
-                                    </ul>   
-                                </div>
-                            </div>
-                        </div>
-                        <div class="description">Complete 3 paintings this summer</div>
-                        <div class="activity"> Last active 3 days ago. </div>
-                        <div class="project-details">
-
-                            <div class="info">
-                                <span>12</span>
-                                <span>Steps</span>
-                            </div>
-                            <div class="info">
-                                <span>02</span>
-                                <span>Tasks</span>
-                            </div>
-                            <div class="info">
-                                <span>02</span>
-                                <span>Week</span>
-                            </div>    
-
-                        </div>
-                        <div class="project-progress">
-                            <span>12 / 24 Tasks Done</span>
-                        </div>
-                        <div class="project-actions">
-                            <span class="project-active">Active</span>
-                            <button type="button">View</button>
-                        </div>
-                    </div>
-
-
-
-                    
-  
-                </div>
-
+            <div class="progress">
+              <span> 60 %</span>
             </div>
-          
-            
-          
-           
+            <div class="content">
+              <div class="details">
+                <span> Active 4 days ago </span>
+                <span>...</span>
+              </div>
+              <div class="title">Learn Painting</div>
+              <div class="summary">Learn to paint from youtube channel
+                            and complete the assassinn creed picture.</div>
+              <button class="btn btn-outline open-project"> Open Project </button>
+              <div class="project-info">
+                <div class="info">
+                  <span>06</span>
+                  <span>Steps</span>
+                </div>
+                <div class="info">
+                  <span>29</span>
+                  <span>Tasks</span>
+                </div>
+                <div class="info">
+                  <span>03</span>
+                  <span>Weeks</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CARD -->
+          <div class="card-container">
+            <div class="card-top create">
+            <span class="project-type create">CREATE</span>
+            <div class="blur"></div>
+            </div>
+            <div class="progress create">
+              <span> 40 %</span>
+            </div>
+            <div class="content">
+              <div class="details">
+              <span> Active 7 days ago </span>
+              <span>...</span>
+              </div>
+              <div class="title">Week Tweak</div>
+              <div class="summary">Prepare whole website, web-app, mobile app and launch Week Tweak. Rule the World!!</div>
+              <button class="btn btn-outline open-project"> Open Project </button>
+              <div class="project-info">
+                <div class="info">
+                  <span>12</span>
+                  <span>Steps</span>
+                </div>
+                <div class="info">
+                  <span>64</span>
+                  <span>Tasks</span>
+                </div>
+                <div class="info">
+                  <span>06</span>
+                  <span>Weeks</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CARD -->
+          <div class="card-container">
+            <div class="card-top ideas">
+              <span class="project-type ideas">IDEAS</span>
+              <div class="blur"></div>
+            </div>
+            <div class="progress ideas">
+              <span> 80 %</span>
+            </div>
+            <div class="content">
+              <div class="details">
+                <span> Active 7 days ago </span>
+                <span>...</span>
+              </div>
+              <div class="title">Artificial Intelligence</div>
+              <div class="summary">Collection of Ideas for Artificial Intelligence Projects.</div>
+              <button class="btn btn-outline open-project"> Open Project </button>
+              <div class="project-info">
+                <div class="info">
+                  <span>02</span>
+                  <span>Steps</span>
+                </div>
+                <div class="info">
+                  <span>24</span>
+                  <span>Tasks</span>
+                </div>
+                <div class="info">
+                  <span>02</span>
+                  <span>Weeks</span>
+                </div>
+              </div>
+            </div>
+          </div>
 
- 
-    </body>
+        </div>
 
 
+      </div>
+
+
+
+    <script>w3.includeHTML();</script>
+  </body>
 </html>

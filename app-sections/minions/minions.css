@@ -1,0 +1,97 @@
+.container {
+  padding: 1.79em;
+}
+
+.wrapper {
+  margin: 1.79em;
+}
+
+
+/* SWITCHES */
+
+/* SWITCH V1 */
+.switch-v1 {
+  display: inline-block;
+  position: relative;
+  width: 2.8em;
+  height: 1.56em;
+  padding: 0.22em;
+  border-radius: 6.39em;
+  background: #efefef;
+}
+
+.switch-v1:before {
+  content: '';
+  position: absolute;
+  width: 1.12em;
+  height: 1.12em;
+  border-radius: 50%;
+  background: #818487;
+  transition: all .3s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+}
+
+input[id="switch-toggle-v1"]:checked ~ .switch-v1:before {
+  transform: translateX(1.24em);
+  background: #2ca58d;
+  transition: all .3s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+}
+
+/* SWITCH V2 */
+.switch-v2 {
+  display: inline-block;
+  position: relative;
+  width: 2.8em;
+  height: 1.56em;
+  padding: 0.22em;
+  border-radius: 6.39em;
+  background: #b5b5b5;
+  transition: all .3s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+}
+
+.switch-v2:before {
+  content: '';
+  position: absolute;
+  width: 1.12em;
+  height: 1.12em;
+  border-radius: 50%;
+  background: #fff;
+  transition: all .3s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+}
+
+input[id="switch-toggle-v2"]:checked ~ .switch-v2 {
+  background: #2ca58d;
+  transition: all .3s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+}
+
+input[id="switch-toggle-v2"]:checked ~ .switch-v2:before {
+  transform: translateX(1.24em);
+  transition: all .3s cubic-bezier(0.6, -0.28, 0.74, 0.05);
+}
+
+
+/* */
+
+details {
+  margin: 1em 0;
+  border: 1px solid black;
+  padding: 1em;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.container input {
+  display: block;
+  margin: 1em 0;
+  border: 1px solid black;
+}
+
+details::marker {
+  content: "+";
+}
+
+details[open]::marker {
+  content: '-';
+}

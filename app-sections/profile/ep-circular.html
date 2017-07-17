@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Energy Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://www.w3schools.com/lib/w3.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../includes/main.css">
+    <link rel="stylesheet" type="text/css" href="../includes/main-menu-v2.css">
+    <link rel="stylesheet" type="text/css" href="../includes/top-section.css">
+
+    <!-- PUT YOUR CSS HERE -->
+    <link rel="stylesheet" type="text/css" href="./ep-circular.css">
+
+  </head>
+
+  <body style="height: 100%;">
+    <div class="slim-loading-bar" style="position:fixed; z-index:999; top:0; width:80%; height: 2px; background: #00a8e8;"></div>
+    <div w3-include-html="../includes/menu.html"></div>
+
+    <div class="content-container">
+
+      <div w3-include-html="../includes/top-section.html"></div>
+      <div class="tabs">
+        <a href="./profile.html" class="tab">Profile</a>
+        <span class="tab active">Energy</span>
+        <a href="./type.html" class="tab">Type</a>
+      </div>
+
+      <!--========== Energy Profile Circular =========== -->
+      <div class="epc-container">
+
+        <div class="ep-circular"></div>
+
+        <div class="circular-bar">
+          <span>25%</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill c25"></div>
+          </div>
+        </div>
+
+      </div>
+
+      
+
+    </div>
+
+    
+
+    <script>w3.includeHTML();</script>
+  </body>
+</html>

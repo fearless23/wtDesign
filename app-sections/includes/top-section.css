@@ -1,0 +1,236 @@
+.main-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafafa;
+  padding: 0 1em;
+  width: 100%;
+  z-index: 101;
+  position: fixed;
+  height: 3.19em;
+  top: 0;
+}
+
+@media (min-width: 40.94em) {
+  .main-topbar {
+    position: static;
+    height: 2.84em;
+    padding: 0 1.26em;
+    background-color: #fafafa;
+  }
+}
+
+.main-topbar .page-title {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+
+
+
+/* TABS GROUP */
+
+.tabs {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 1em;
+  border-bottom: 2px solid #efefef;
+  background-color: #fafafa;
+}
+
+.tab {
+  margin-right: 1.12em;
+  padding: 0.44em 0.5em;
+  border-bottom: 2px solid transparent;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.tab:not(last-child) {
+  margin-right: 1.12em;
+}
+
+.tab:hover {
+  color: #2ca58d;
+}
+
+.tab.active,.tab.active:hover {
+  color: #2ca58d;
+  font-weight: bold;
+  border-bottom: 2px solid #2ca58d;
+  transition: border-bottom .31s linear;
+}
+
+.topbar-icon-group-toggle {
+  display: none;
+}
+
+/* TOPBAR ICON GROUPS */
+@media (max-width: 40.94em) {
+  .topbar-icon-group-toggle {
+    display: inherit;
+  }
+
+  .topbar-icon-group {
+    position: fixed;
+    z-index: -100;
+    right: 0;
+    width: 0;
+    height: 3.19em;
+    background: #f5f5f5;
+    justify-content: flex-end;
+    padding: 0 1em;
+    opacity: 0;
+  }
+
+  input[id="topbar-icon-group-toggle"]:checked ~ .topbar-icon-group {
+    z-index: 110;
+    width: 100%;
+    opacity: 1;
+    transition: width .4s ease-in-out, opacity .4s ease-in-out;
+  }
+}
+
+/* Search */
+
+
+/* Layout for search container */
+.search {
+    padding: 3em;
+}
+
+.search {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 100%;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    pointer-events: none;
+    transition: transform 0.3s;
+    transition-delay: 0.4s;
+    transition-timing-function: ease-out;
+}
+
+.search::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transition: transform 0.3s;
+    transition-timing-function: ease-out;
+}
+
+input[id="search-toggle"]:checked + .search {
+    pointer-events: auto;
+    transform: translate3d(-100%,0,0);
+    transition-delay: 0s;
+}
+
+input[id="search-toggle"]:checked + .search::after {
+    transform: translate3d(100%,0,0);
+    transition-delay: 0.4s;
+}
+
+
+
+.search__input {
+    border: 0;
+    background: transparent;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+.search__input {
+    font-family: inherit;
+    font-size: 6vw;
+    line-height: 1;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 0.05em 0;
+    color: #000;
+    border-bottom: 2px solid;
+}
+
+.search__input:focus {
+    outline: none;
+}
+
+.search__info {
+    display: block;
+    padding: 0.85em 0;
+    font-size: 0.89em;
+    font-weight: bold;
+}
+
+
+.icon-search-close {
+  position: absolute;
+  font-size: 2em;
+  top: 1.25em;
+  right: 1.25em;
+}
+
+@media screen and (max-width: 40em) {
+    .search__related {
+        font-size: 80%;
+        width: 75%;
+    }
+    .search__input {
+        font-size: 2em;
+        width: 85%;
+    }
+    .search__info {
+        width: 90%;
+    }
+    .icon-search-close {
+      font-size: 1em;
+      top: 1.25em;
+      right: 1.25em;
+    }
+}
+
+.search__input::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #969696;
+}
+
+.search__input::-moz-placeholder {
+    opacity: 1;
+    /* Mozilla Firefox 19+ */
+    color: #969696;
+}
+
+.search__input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #969696;
+}
+
+.search__input::-webkit-search-cancel-button,
+.search__input::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+.search__input::-ms-clear {
+    display: none;
+}
+
+
+
+.search-related {
+    display: flex;
+    padding-top:4em;
+    pointer-events: none;
+}
+
+.search-suggestion {
+    width: 50%;
+}

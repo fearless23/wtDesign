@@ -1,0 +1,46 @@
+.tabs2 {
+  display: flex;
+  background-color: #2ca58d;
+  color: white;
+  justify-content: center;
+}
+
+.tab2 {
+  width: 12em;
+  text-align: center;
+  padding: 0.5em 0;
+  border-top: 4px solid transparent;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.tab2:hover {
+  opacity: 1;
+  border-top: 4px solid #2ca58D;
+}
+
+.tab2.active {
+  background-color: #fff;
+  color: #4d5256;
+  opacity: 1;
+  border-top: 4px solid #2ca58D;
+  border-bottom: none;
+  cursor: default;
+}
+
+/* override for topbar */
+.main-topbar {
+  background-color: #2ca58d;
+}
+
+.page-title {
+  color: white;
+}
+
+.main-topbar .icon, .main-topbar svg.icon {
+  fill: #efefef;
+}
+
+.main-topbar .icon:hover, .main-topbar svg.icon:hover {
+  fill: white;
+}

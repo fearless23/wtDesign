@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Projects BlankState</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://www.w3schools.com/lib/w3.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../includes/main.css">
+    <link rel="stylesheet" type="text/css" href="../includes/main-menu.css">
+    <link rel="stylesheet" type="text/css" href="../includes/top-section.css">
+
+    <link rel="stylesheet" type="text/css" href="no-project.css">
+  </head>
+  <body style="height: 100%;">
+    
+    <div w3-include-html="../includes/menu.html"></div>
+
+    <div class="content-container">
+      
+      <div w3-include-html="../includes/top-section.html"></div>
+      <div class="tabs">
+        <div class="tab">Base</div>
+        <div class="tab active">Personal</div>
+        <div class="tab">Pro</div>
+        <div class="tab">Social</div>
+      </div>
+      <div class="fbox-sb p-y-md p-x">
+        <div></div>
+        <button class="btn btn-sm btn-blue">Create a Project </button>
+      </div>
+
+      <div class="blankslate no-project-blankslate">
+    
+        <img class="no-project-img" src="../img/empty-state/empty-v2.png">
+        
+        <div class="blankslate-title p-y-md"> Welcome to Base Projects </div>
+        <div class="blankslate-summary"> Projects here are automatically added, although you can add tasks and steps </div>
+      </div>
+
+    </div>
+
+    <script>w3.includeHTML();</script>
+
+  </body>
+</html>

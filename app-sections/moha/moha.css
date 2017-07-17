@@ -17,42 +17,43 @@
 	color: #fff;
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-start;
 }
 
 .moha-date {
+	width: 33%;
 	padding: 1em;
 	background-color: hsla(207,6%,32%,0.5);
 }
 
-.moha-logo {
+.moha-now-container {
 
 }
 
 .moha-menu-container {
 	position: absolute;
+	z-index: 10;
 	left: 0;
 	bottom: 10em;
 	width: 100%;
-	height: 2em;
-	background-color: hsl(207,6%,32%);
-	z-index: 10;
-
-	color: #fff;
 }
 
 .moha-menu {
-	width: 100%;
-	color: #ababab;
 	display: flex;
+	align-items: center;
+	width: 100%;
+	background-color: #4d5256;
 }
 
 .moha-menu-link {
-	width: 20%;
-	text-align: center;
-	line-height: 2em;
-	border-right: 1px solid hsl(207,6%,25%);
-	cursor: pointer;
 	position: relative;
+	cursor: pointer;
+	width: 20%;
+	height: 2.5em;
+	border-right: 1px solid #818487;
+	color: #efefef;
+	line-height: 2.5em;
+	text-align: center;	
 }
 
 .moha-menu-link:hover {
@@ -63,11 +64,9 @@
 	border-right: none;
 }
 
-
 .moha-menu-link-title {
 	display: block;
 	width: 100%;
-	height: 2em;
 }
 
 .moha-menu-link-title:hover + .moha-menu-level2 {
@@ -76,13 +75,13 @@
 
 .moha-menu-level2 {
 	position: absolute;
-	background-color: hsl(207,6%,25%);
-	width: 80%;
-	margin-left: 10%;
-	bottom: 2em;
-	color: #ababab;
-	display: none;
 	z-index: 100;
+	display: none;
+	bottom: 100%;
+	width: 100%;
+	padding: 0.5em 0;
+	background-color: #4d5256;
+	color: #b5b5b5;
 }
 
 .moha-menu-level2:hover {
@@ -90,7 +89,8 @@
 }
 
 .moha-menu-level2-link {
-	height: 2em;
+	line-height: 2.5em;
+	height: 2.5em;
 	text-align: center;
 }
 

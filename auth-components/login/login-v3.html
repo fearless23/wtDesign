@@ -1,0 +1,53 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>Login V3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    <link rel="stylesheet" type="text/css" href="login-v3.css">
+  </head>
+  <body>
+
+    <div class="login-wrapper">
+      <div class="login-container">
+        
+        <h1 class="wt-title">Week Tweak</h1>
+
+        <div class="welcome-msg">
+          <h2>Welcome back!</h2>
+          <h3>Sign in to continue to Week Tweak.</h3>
+        </div>
+        
+        <button (click)="loginGoogle()" class="btn btn-green btn-md btn-wide m-y-md center" id="google">
+          Connect With Google
+        </button>
+        <div style="text-align:center;" class="title m-y-md"> Or </div>
+        <form class="login-form m-y-md">
+
+          <div class="form-group">
+            <input type="username"  placeholder="Username" class="form-control input-lg input-block" active>
+          </div>
+
+          <div class="form-group">
+            <input type="password"  placeholder="Password" class="form-control input-lg input-block">
+          </div>
+
+          <button type="button" class="btn btn-blue btn-md btn-wide m-y-md center">Login to Week Tweak</button>
+
+        </form>
+
+        <span class="error hidden" *ngIf="error">{{ error }}</span>
+        
+
+        <div class="tabs-group">
+          <span class="tab">Sign In</span>
+          <span class="tab tab-active">Sign Up</span>
+          <span class="tab">Google</span>
+        </div>
+
+      </div>
+    </div>
+
+
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tabs V1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://www.w3schools.com/lib/w3.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../includes/main.css">
+    <link rel="stylesheet" type="text/css" href="../includes/main-menu.css">
+    <link rel="stylesheet" type="text/css" href="../includes/top-section.css">
+
+    <link rel="stylesheet" type="text/css" href="tabs-v1.css">
+    
+  </head>
+  <body style="height: 100%;">
+    
+    <div w3-include-html="../includes/menu.html"></div>
+
+    <div class="content-container">
+
+      <div w3-include-html="../includes/top-section.html"></div>
+    
+      <div class="tabs-v1">
+        <label for="base-tab" class="btn btn-sm tab-v1">Base</label>
+        <label for="personal-tab" class="btn btn-sm tab-v1 active">Personal</label>
+        <label for="pro-tab" class="btn btn-sm tab-v1">Pro</label>
+        <label for="social-tab" class="btn btn-sm tab-v1">Social</label>
+      </div>
+      
+      <!-- ============== Tabs Content ============== -->
+     
+      <div class="tabs-container">
+        
+        <div class="tab-content-container">
+          <input id="base-tab" type="radio" name="project-tab-selector" >
+          
+          <div class="tab-content-wrapper">
+            as
+          </div>
+        </div>
+
+        <div class="tab-content-container">
+          <input id="personal-tab" type="radio" name="project-tab-selector" checked>
+          
+          <div class="tab-content-wrapper">
+            
+                er
+          </div>
+        </div>
+
+        <div class="tab-content-container">
+          <input id="pro-tab" type="radio" name="project-tab-selector" >
+          
+          <div class="tab-content-wrapper">
+            re
+          </div>
+        </div>
+
+        <div class="tab-content-container">
+          <input id="social-tab" type="radio" name="project-tab-selector" >
+          
+          <div class="tab-content-wrapper">
+            nn
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+
+       
+
+ 
+  
+  
+  
+  
+    <script>w3.includeHTML();</script>
+    </body>
+</html>
